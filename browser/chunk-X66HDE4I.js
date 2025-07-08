@@ -1,0 +1,1 @@
+import"./chunk-WWX6BADO.js";var o=[{path:"",data:{title:"Employees Profile Abbott"},loadComponent:()=>import("./chunk-6E2FO4QU.js").then(t=>t.DetectAiTotalByShopBlueforceComponent)}];export{o as routes};

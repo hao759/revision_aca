@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-             "baseHref": "/revision_aca/",
+            
             "outputPath": "dist/coreui-pro-angular-admin-template-theme-bright",
             "index": "src/index.html",
             "browser": "src/main.ts",

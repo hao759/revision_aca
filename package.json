@@ -12,10 +12,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "zip": "git archive -o $npm_package_name-$npm_package_config_theme-v$npm_package_version.zip -9 HEAD"
+    "zip": "git archive -o $npm_package_name-$npm_package_config_theme-v$npm_package_version.zip -9 HEAD",
+    "deploy": "ng deploy --base-href=/revision_aca/",
+      "predeploy": "npm run build"
   },
   "private": true,
   "dependencies": {

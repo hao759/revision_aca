@@ -1,0 +1,54 @@
+.card-data {
+  padding: 0 !important;
+}
+
+.pt-3 {
+  padding-top: 0px !important;
+}
+
+.table-container {
+  max-height: 90vh;
+  // overflow-y: auto;
+}
+.overflow {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.table-container thead {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+.custom-ng-select ::ng-deep .ng-dropdown-panel .ng-option {
+  text-align: left;
+}
+::ng-deep .modal.modal-fullscreen .modal-dialog {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+::ng-deep .modal.modal-fullscreen .modal-content {
+  height: 100vh;
+  border-radius: 0;
+}
+
+.custom-icon {
+  font-size: 40px;
+  color: white;
+}
+
+::ng-deep .carousel-control-next-icon {
+  // background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/%3e%3c/svg%3e);
+  width: 69px;
+  height: 69px;
+}
+
+::ng-deep .carousel-control-next-icon {
+  // background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/%3e%3c/svg%3e);
+  width: 49px;
+  height: 49px;
+}

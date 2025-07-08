@@ -1,0 +1,142 @@
+<div class="mt-4 container-fluid">
+  <c-row>
+    <c-col xs="12">
+      <c-card class="mb-4">
+        <c-card-body>
+          <!-- Project and Image Handling Options -->
+          <c-row>
+            <c-col md="6">
+              <div class="mb-3">
+                <label cLabel class="fw-bold">Employee</label>
+                <select cSelect class="form-select" [(ngModel)]="selectedProject" (change)="onProjectChange($event)">              
+                  <option *ngFor="let item of projects" [value]="item.employee_code">
+                    {{item.employee_code}} - {{item.employee_name}}
+                  </option>
+                </select>
+              </div>
+            </c-col>
+            <!-- <c-col md="6">
+              <div class="mb-3">
+                <label cLabel class="fw-bold">Image Handling</label>
+                <select cSelect class="form-select" [(ngModel)]="keepOldImages" (change)="onKeepImagesChange($event)">
+                  <option [value]="false">Clear previous images when uploading new ones</option>
+                  <option [value]="true">Keep previous images when uploading new ones</option>
+                </select>
+              </div>
+            </c-col> -->
+            <c-col md="6">
+              <img src={{imagePG}} alt="" srcset="" height="200px">
+            </c-col>
+          </c-row>
+
+          <!-- Upload Section -->
+          <div class="upload-container mb-3" (dragover)="onDragOver($event)" (dragleave)="onDragLeave($event)"
+            (drop)="onDrop($event)" [class.dragover]="isDragging">
+            <div class="upload-content text-center p-3">
+              <input type="file" #fileInput hidden multiple accept="image/*" (change)="onFileSelected($event)">
+              <button cButton color="primary" (click)="fileInput.click()">
+                Choose Image
+              </button>
+              <p class="mt-2 small text-muted">
+                Supported: JPG, PNG (max 5MB)
+              </p>
+            </div>
+          </div>
+
+          <c-row *ngIf="imageUrls.length > 0">
+            <!-- Thumbnails Gallery -->
+            <c-col xs="12" class="mb-3">
+              <div class="thumbnails-container">
+                <div class="thumbnails-scroll">
+                  <div *ngFor="let img of imageUrls; let i = index" class="thumbnail-item"
+                    [class.active]="i === selectedImageIndex" (click)="onImageSelect(i)">
+                    <img [src]="img.predictedUrl" [alt]="'Thumbnail ' + (i + 1)" class="thumbnail-image">
+                    <div class="thumbnail-overlay" *ngIf="img.loading">
+                      <c-spinner size="sm"></c-spinner>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </c-col>
+
+            <!-- Main Image and Results -->
+            <c-col md="8"> <!-- Changed from md="6" to md="8" for 2/3 width -->
+              <div class="image-container">
+                <!-- Image Display -->
+                <img *ngIf="imageUrls[selectedImageIndex]?.predictedUrl"
+                  [src]="imageUrls[selectedImageIndex].predictedUrl" [alt]="'Result image ' + (selectedImageIndex + 1)"
+                  (click)="openImageInNewWindow(imageUrls[selectedImageIndex].predictedUrl)" style="cursor: pointer;"
+                  #imageElement>
+
+                <!-- Loading Overlay -->
+                <div *ngIf="imageUrls[selectedImageIndex]?.loading" class="loading-overlay">
+                  <div class="loading-content">
+                    <c-spinner size="lg" color="primary" variant="grow"></c-spinner>
+                    <div class="spinner-text">Processing Image</div>
+                    <div class="processing-text">Please wait while we analyze your image...</div>
+                  </div>
+                </div>
+              </div>
+            </c-col>
+
+            <!-- Results Table -->
+            <c-col md="4"> <!-- Changed from md="6" to md="4" for 1/3 width -->
+              <div *ngIf="!imageUrls[selectedImageIndex]?.loading">
+                <table cTable hover>
+                  <thead>
+                    <tr>
+                      <th class="fw-bold">Thông tin</th>
+                      <th class="fw-bold">Kết quả</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Face</td>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <svg
+                            [cIcon]="icons[imageUrls[selectedImageIndex]?.detectResult?.face_ok ? 'cilCheckCircle' : 'cilXCircle']"
+                            [style.color]="imageUrls[selectedImageIndex]?.detectResult?.face_ok ? '#2eb85c' : '#e55353'"
+                            size="lg" class="me-2">
+                          </svg>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Logo</td>
+                      <td>{{imageUrls[selectedImageIndex]?.detectResult?.logo}}</td>
+                    </tr>
+                    <tr>
+                      <td>Logo Status</td>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <svg
+                            [cIcon]="icons[imageUrls[selectedImageIndex]?.detectResult?.logo_ok ? 'cilCheckCircle' : 'cilXCircle']"
+                            [style.color]="imageUrls[selectedImageIndex]?.detectResult?.logo_ok ? '#2eb85c' : '#e55353'"
+                            size="lg" class="me-2">
+                          </svg>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Location</td>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <svg
+                            [cIcon]="icons[imageUrls[selectedImageIndex]?.detectResult?.location_ok ? 'cilCheckCircle' : 'cilXCircle']"
+                            [style.color]="imageUrls[selectedImageIndex]?.detectResult?.location_ok ? '#2eb85c' : '#e55353'"
+                            size="lg" class="me-2">
+                          </svg>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </c-col>
+          </c-row>
+        </c-card-body>
+      </c-card>
+    </c-col>
+  </c-row>
+</div>

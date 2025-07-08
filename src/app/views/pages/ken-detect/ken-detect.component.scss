@@ -1,0 +1,22 @@
+.card-data {
+  padding: 0 !important;
+}
+
+.pt-3 {
+  padding-top: 0px !important;
+}
+
+.table-container {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.table-container thead {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+.custom-ng-select ::ng-deep .ng-dropdown-panel .ng-option {
+  text-align: left;
+}

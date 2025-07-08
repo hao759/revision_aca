@@ -1,0 +1,315 @@
+<div class="card mb-3">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <label class="form-label fw-bold">Employee Code</label>
+                <div class="input-group">
+                  <input
+                      type="text"
+                      class="form-control"
+                      [(ngModel)]="employee_code"
+                      placeholder="Please fill Employee Code"
+                  />
+                  <button 
+                      cButton 
+                      color="warning"
+                      (click)="resetInput()"
+                  >
+                      <span class="d-flex align-items-center gap-1">
+                          <svg cIcon name="cilXCircle" size="sm"></svg>
+                          Reset
+                      </span>
+                  </button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label fw-bold">Project ID</label>
+                <c-multi-select [(ngModel)]="selectedProject" [disabled]="true"
+                (valueChange)="selectProjectId()"
+                >
+                    <c-multi-select-option *ngFor="let option of projectIds" 
+                    [value]="option.project_id"
+                    [selected]="option.selected"
+                    >
+                      {{ option.project_name }}
+                    </c-multi-select-option>
+                </c-multi-select>            
+            </div>
+        </div>
+    </div>
+</div>
+
+<c-modal [(visible)]="isLoading" size="lg" backdrop="static" keyboard="false" class="d-flex align-items-center justify-content-center">
+    <c-modal-body class="text-center">
+      <c-spinner color="primary" class="mb-3"></c-spinner>
+      <p>Loading, please wait...</p>
+    </c-modal-body>
+</c-modal>
+
+
+<div class="card mb-3">
+    <div class="card-body">
+        <div class="flex-container">
+            <button cButton color="primary"
+            class="button-card"
+            (click)="filterEmployee()"
+            ><svg cIcon name="cilFilter" size="sm"></svg> Filter
+            </button> 
+            <!-- <button cButton color="success"
+            class="button-card"
+            (click)="exportEmployeesPPT()"
+            ><svg cIcon name="cilArrowThickBottom" size="sm"></svg> Export Employees PPT
+            </button>  -->
+            <div class="d-inline-block">
+                <!-- <c-dropdown> -->
+                    <button color="success" cButton class="button-card" (click)="exportEmployeesAbbott()">
+                        <svg cIcon name="cilArrowThickBottom" size="sm"></svg> Export Employees
+                    </button>
+                    <!-- <ul cDropdownMenu>
+                        <li *ngFor="let project of projectIds">
+                            <button cDropdownItem (click)="exportEmployeesPPT(project.project_id,project)">
+                              <svg cIcon name="cilArrowThickBottom" size="sm"></svg>
+                              Export Project {{ project.project_id }}
+                            </button>
+                          </li>
+                    </ul> -->
+                <!-- </c-dropdown>    -->
+            </div>
+            <button cButton color="success"
+            class="button-card"
+            (click)="showImportTemplate()"
+            ><svg cIcon name="cilArrowThickFromBottom" size="sm"></svg>  Import Employees
+            </button> 
+        </div>
+    </div>
+    <c-modal [(visible)]="showImportDialog">
+        <c-modal-header>
+          Import File EmployeePPT
+        </c-modal-header>
+        
+        <c-modal-body>
+          <div class="file-input-container">
+            <input
+              class="form-control btn-info"
+              type="file"
+              (change)="onChange($event)"
+              #myInputFile
+            />
+          </div>
+        </c-modal-body>
+      
+        <c-modal-footer>
+          <button 
+            cButton 
+            color="success"
+            class="mt-3"
+            (click)="importFileEmployeePPT()"
+          >
+            <c-icon name="cil-cloud-upload"></c-icon> Import File
+          </button>
+        </c-modal-footer>
+    </c-modal>
+</div>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="fw-bold">Total Items: {{ totalRecords }}</span>
+            <!-- <nav>
+                <ul class="pagination">
+                    <li class="page-item" *ngFor="let row of [10, 20, 30]">
+                        <a class="page-link" (click)="changePageSize(row)">{{ row }}</a>
+                    </li>
+                </ul>
+            </nav> -->
+        </div>
+
+        <table [striped]="true" cTable color="white">
+            <thead>
+              <tr>
+                <th scope="col" style="width:20px;">#</th>
+                <th scope="col" style="width:300px;" >Employee</th>
+                <!-- <th scope="col" style="width:40px;">Mobile</th> -->
+                <th scope="col" style="width:300px;">Image</th>
+                <th scope="col" style="width:300px;">Image Face 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let emp of employeeProfiles">
+                <td style="text-align: center; vertical-align: middle;">
+                    {{emp.RowNumber}}
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <span class="fw-bold">{{emp.employee_code}}</span> - {{emp.employee_name}}
+                </td>
+                <!-- <td>
+                    {{emp.mobile}}
+                </td> -->
+                <td style="text-align: center; vertical-align: middle;">
+                    <div class="d-flex align-items-center justify-content-center gap-2 tooltip-container">
+                        <div class="tooltip-container">
+                            <img 
+                              [src]="emp.image" 
+                              width="200" 
+                              height="250" 
+                              class="rounded shadow-sm tooltip-trigger"
+                              style="cursor: pointer;"
+                              (click)="showUpdateImage(emp,1)"
+                              (error)="replaceWithDefaultImage($event)"
+                            />
+                            <span class="custom-tooltip">Xem và update ảnh nhân viên</span>
+                        </div>
+                        <c-modal [(visible)]="isUpdateImg" backdrop="static">
+                            <c-modal-header>
+                              <h5 class="modal-title">Update Image</h5>
+                              <button type="button" class="btn-close" (click)="resetImgUpdate()"></button>
+                            </c-modal-header>
+                            <c-modal-body>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="mb-3 text-start">
+                                            <p class="fw-bold">Thông tin nhân viên: </p>
+                                            <p>Code: {{ oldEmpCode }}</p>
+                                            <p>Name: {{ oldEmpName }}</p>
+                                        </div>
+                                    
+                                        <div class="d-flex justify-content-center gap-3">
+                                            <div class="text-center d-flex flex-column align-items-center">
+                                                <label class="fw-bold">Image</label>
+                                                <img
+                                                [src]="oldImgUrl"
+                                                class="img-thumbnail mt-2"
+                                                style="width: 300px; height: 350px; object-fit: cover; cursor: pointer;"
+                                                />
+                                            </div>                                      
+                                        </div>
+                                    </div>
+                            
+                                <!-- <div class="mt-3">
+                                    <p>Nhập URL Ảnh: </p>
+                                    <input
+                                    type="text"
+                                    [(ngModel)]="newImageUrl"
+                                    class="form-control mb-2"
+                                    placeholder="Enter new image URL"
+                                    />
+                                </div> -->
+                                <div>
+                                    <div>
+                                        <div class="fw-bold">Update ảnh nhân viên</div>
+                                    </div>
+                                    <p class="mt-3 text-start">Chọn ảnh update: </p>
+                                    <input
+                                    type="file"
+                                    accept=".jpg, .png"
+                                    class="form-control mb-2 mt-3"
+                                    (change)="onFileSelected($event,1)"
+                                    />
+                                    <div *ngIf="previewImage">
+                                    <p class="mt-2">Xem ảnh update:</p>
+                                    <img [src]="previewImage" class="img-thumbnail" style="width: 200px; height: 200px; object-fit: cover;" />
+                                    </div>
+
+                                    <button cButton color="secondary" (click)="resetImgUpdate()">Cancel</button>
+                                    <button cButton color="success" (click)="updateImage(1)">Update Image</button>
+                                </div>
+                                </div>
+                            </c-modal-body>
+                        </c-modal>
+                    </div>
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    <div class="d-flex align-items-center justify-content-center gap-2 tooltip-container">
+                        <div class="tooltip-container">
+                          <ng-container *ngIf="loadingImg; else showImage">
+                            <p class="loading-text">Ảnh đang được tải...</p>
+                        </ng-container>
+                        <ng-template #showImage>
+                          <img 
+                            [src]="emp.image_face_2" 
+                            width="200" 
+                            height="250" 
+                            class="rounded shadow-sm tooltip-trigger"
+                            style="cursor: pointer;"
+                            (click)="showUpdateImage(emp,2)"
+                            (load)="onImageLoad()"
+                            (error)="replaceWithDefaultImage($event)"
+                          />
+                        </ng-template>
+                            <span class="custom-tooltip">Xem và update ảnh face 2 nhân viên </span>
+                        </div>
+                          
+                            <c-modal [(visible)]="isUpdateImg_2" backdrop="static">
+                                <c-modal-header>
+                                  <h5 class="modal-title">Update Image</h5>
+                                  <button type="button" class="btn-close" (click)="resetImgUpdate()"></button>
+                                </c-modal-header>
+                              
+                                <c-modal-body>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <div class="mb-3 text-start">
+                                                <p class="fw-bold">Thông tin nhân viên: </p>
+                                                <p>Code: {{ oldEmpCode }}</p>
+                                                <p>Name: {{ oldEmpName }}</p>
+                                              </div>
+                                          
+                                              <div class="d-flex justify-content-center gap-3">
+                                                <div class="text-center d-flex flex-column align-items-center">
+                                                    <label class="fw-bold">Image Face 2</label>
+                                                    <img
+                                                      [src]="oldImgUrl_2"
+                                                      class="img-thumbnail mt-2"
+                                                      style="width: 300px; height: 350px; object-fit: cover; cursor: pointer;"
+                                                    />
+                                                </div>                                      
+                                              </div>
+                                        </div>
+                                  
+                                      <!-- <div class="mt-3">
+                                        <p>Nhập URL Ảnh 2: </p>
+                                        <input
+                                          type="text"
+                                          [(ngModel)]="newImageUrl_2"
+                                          class="form-control mb-2"
+                                          placeholder="Enter new image URL"
+                                        />
+                                      </div> -->
+                                      <div>
+                                        <div>
+                                            <div class="fw-bold">Update ảnh nhân viên</div>
+                                        </div>
+                                        <p class="mt-3 text-start">Chọn ảnh 2 update: </p>
+                                        <input
+                                          type="file"
+                                          accept=".jpg, .png"
+                                          class="form-control mb-2 mt-3"
+                                          (change)="onFileSelected($event,2)"
+                                        />
+                                        <div *ngIf="previewImage2">
+                                          <p class="mt-2">Xem ảnh 2 update:</p>
+                                          <img [src]="previewImage2" class="img-thumbnail" style="width: 200px; height: 200px; object-fit: cover;" />
+                                        </div>
+
+                                        <button cButton color="secondary" (click)="resetImgUpdate()">Cancel</button>
+                                        <button cButton color="success" (click)="updateImage(2)">Update Image</button>
+                                      </div>
+                                    </div>
+                                </c-modal-body>
+                              </c-modal>
+                    </div>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+        <c-smart-pagination
+        [activePage]="currentPage"
+        [pages]="totalPages"
+        align="center"
+        (activePageChange)="onPageChange($event)"
+        >
+        </c-smart-pagination>
+          
+    </div>
+</div>
+

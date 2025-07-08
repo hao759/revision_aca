@@ -1,0 +1,61 @@
+<!--sidebar-->
+<button
+      (click)="toggleSidebar()"
+      cSidebarToggler="sidebar1"
+      class="btn btn-outline-primary position-fixed toggle-btn-sidebar"
+      aria-label="Toggle sidebar fold"
+      [ngStyle]="{ left: isUnfoldable ? '1rem' : '15rem', top: '1.5rem' }"
+      >
+      <i class="bi bi-list"></i>
+    </button>
+
+<!-- Sidebar -->
+<c-sidebar
+  #sidebar1="cSidebar"
+  class="d-print-none sidebar sidebar-fixed"
+  colorScheme="light"
+  id="sidebar1"
+  visible
+>
+  <c-sidebar-header class="bg-primary border-bottom" style="min-height: 4rem;">
+    <c-sidebar-brand style="cursor: pointer;">
+      <span class="fw-bold text-white">AI Vision</span>
+      <svg cIcon class="sidebar-brand-narrow" height="32" name="signet" title="CoreUI Logo"></svg>
+    </c-sidebar-brand>
+
+  </c-sidebar-header>
+
+  <ng-scrollbar
+    #scrollbar="ngScrollbar"
+    (updated)="onScrollbarUpdate(scrollbar.state)"
+    class="overflow"
+    pointerEventsMethod="scrollbar"
+    visibility="hover"
+  >
+    <c-sidebar-nav #overflow [navItems]="navItems" dropdownMode="close" compact />
+  </ng-scrollbar>
+</c-sidebar>
+
+<!--main-->
+<div class="wrapper d-flex flex-column min-vh-100">
+  <!--app-header-->
+
+  <app-default-header
+    [cShadowOnScroll]="'sm'"
+    class="mb-4 d-print-none header header-sticky p-0 shadow-sm bg-primary"
+    position="sticky"
+    sidebarId="sidebar1"
+  />
+  <!--app-body-->
+  <div class="body flex-grow-1">
+    <c-container fluid class="h-auto">
+      <app-default-breadcrumb />
+      <router-outlet />
+    </c-container >
+  </div>
+  <!--app footer-->
+  <app-default-footer />
+</div>
+
+<!--aside-->
+<app-default-aside style="display: none;" />

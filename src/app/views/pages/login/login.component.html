@@ -1,0 +1,119 @@
+<section [class]="returnClassBg()">
+    <c-container breakpoint="md" class="">
+      <c-row class="row d-flex justify-content-center align-items-center h-100">
+        <c-col lg="6" *ngIf="bgLogin">
+                  <div id="slider">
+                      <div class="slides active">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                              width="100%" />
+                      </div>
+  
+                      <div class="slides">
+                          <img src="https://blog.darwinbox.com/hubfs/MicrosoftTeams-image%20%287%29-Dec-02-2022-12-31-53-6651-PM.png"
+                              width="100%" />
+                      </div>
+  
+                      <div class="slides">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdf5FOnbXMq0AegJxGDPQRmBXGS6n5BHRBhA&s"
+                              width="100%" />
+                      </div>
+  
+                      <div class="slides">
+                          <img src="https://itsm.tools/wp-content/uploads/2020/07/successful-employees.png"
+                              width="100%" />
+                      </div>
+  
+                      <div id="dot" style="display: none;"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
+                              class="dot"></span><span class="dot"></span></div>
+                  </div>
+        </c-col>
+        <c-col lg="6">
+          <c-card-group>
+            <c-card class="p-4">
+              <c-card-body>
+                <form cForm>
+                  <h1>Login</h1>
+                  <p class="text-body-secondary">Sign In to your account</p>
+                  <c-input-group class="mb-3">
+                    <span cInputGroupText>
+                      <svg cIcon name="cilUser"></svg>
+                    </span>
+                    <input [(ngModel)]="username" autoComplete="username"  name="username" cFormControl placeholder="Username" />
+                  </c-input-group>
+                  <c-input-group class="mb-4"  *ngIf="!isForgot">
+                    <span cInputGroupText>
+                      <svg cIcon name="cilLockLocked"></svg>
+                    </span>
+                    <input
+                    [(ngModel)]="password"
+                    name="password"
+                      autoComplete="current-password"
+                      cFormControl
+                      placeholder="Password"
+                      type="password"
+                    />
+                  </c-input-group>
+                  <c-input-group class="mb-3" *ngIf="isForgot">
+                    <span cInputGroupText>
+                      <svg cIcon name="cilUser"></svg>
+                    </span>
+                    <input [(ngModel)]="email" autoComplete="username"  name="email" cFormControl placeholder="Email" />
+                  </c-input-group>
+                  <c-row class="d-flex justify-content-between">
+                    <c-col xs="6">
+                      <button *ngIf="!isForgot" cButton class="px-4" color="primary" (window:keypress)="onSomeAction($event)" (click)="onSubmit()">
+                        Login
+                      </button>
+                      <button *ngIf="isForgot" cButton class="px-4" color="primary" (window:keypress)="onSomeAction($event)" (click)="onSubmit()">
+                        Check
+                      </button>
+                    </c-col>
+                    <c-col class="text-right" xs="6">
+                      <p class="btn-forgot cursor-pointer text-sm font-bold text-primary" (click)="forgotPass()">
+                        {{ !isForgot ? "Forgot password?" : "Login" }}
+                    </p>
+                    </c-col>
+                  </c-row>
+                </form>
+              </c-card-body>
+            </c-card>
+          </c-card-group>
+        </c-col>
+      </c-row>
+    </c-container>
+</section>
+<c-toaster placement="middle-end">
+  <c-toast 
+  [autohide]="false" 
+  [fade]="true" 
+  [visible]="showToast" 
+  color="warning">
+    <c-toast-header>
+      Login Fail!
+    </c-toast-header>
+    <c-toast-body>Vui lòng nhập đầy đủ thông tin!</c-toast-body>
+  </c-toast>
+</c-toaster>
+
+<c-toaster placement="middle-end">
+  <c-toast 
+  [autohide]="false" 
+  [fade]="true" 
+  [visible]="errorPass" 
+  color="warning">
+    <c-toast-header>
+      Login Fail!
+    </c-toast-header>
+    <c-toast-body>Sai mật khẩu</c-toast-body>
+  </c-toast>
+</c-toaster>
+
+<c-modal [(visible)]="isLoading" size="lg" backdrop="static" keyboard="false" class="d-flex align-items-center justify-content-center">
+  <c-modal-body class="text-center">
+    <c-spinner color="primary" class="mb-3"></c-spinner>
+    <p>Logining, please wait...</p>
+  </c-modal-body>
+</c-modal>
+
+
+

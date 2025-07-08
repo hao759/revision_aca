@@ -1,0 +1,321 @@
+<c-card class="mt-1 mb-1">
+  <c-row class="p-2">
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Từ ngày</h6>
+      </span>
+      <c-date-picker inputReadOnly [(ngModel)]="fromDate" [inputDateFormat]="formatDate" #datePicker="cDatePicker" />
+    </c-col>
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Đến ngày</h6>
+      </span>
+      <c-date-picker inputReadOnly [(ngModel)]="toDate" [inputDateFormat]="formatDate" #datePicker="cDatePicker" />
+    </c-col>
+
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Nhân Viên</h6>
+      </span>
+      <c-input-group class="input-prepend">
+        <input cFormControl placeholder="Nhập mã nhân viên" type="text" [(ngModel)]="att_code" />
+      </c-input-group>
+    </c-col>
+
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Cửa hàng</h6>
+      </span>
+      <c-input-group class="input-prepend">
+        <input cFormControl placeholder="Nhập mã cửa hàng" type="text" [(ngModel)]="shop_code" />
+      </c-input-group>
+    </c-col>
+
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Mã báo cáo</h6>
+      </span>
+      <c-input-group class="input-prepend">
+        <input cFormControl placeholder="Nhập mã báo cáo" type="text" [(ngModel)]="id_BC" />
+      </c-input-group>
+    </c-col>
+
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Kết quả</h6>
+      </span>
+      <div style="display: flex; gap:10px">
+        <select style="width:100%; padding:6px 12px; border: 1px solid #dbdfe6" cSelect [(ngModel)]="kqqc">
+          <option value="">Tất cả</option>
+          <option value="ci_result-pass">AI Check-in - Pass</option>
+          <option value="ci_result-fail">AI Check-in - Fail</option>
+          <option value="co_result-pass">AI Check-out - Pass</option>
+          <option value="co_result-fail">AI Check-out - Fail</option>
+          <option value="ci_final_result-pass">QC Check-in - Pass</option>
+          <option value="ci_final_result-fail">QC Check-in - Fail</option>
+          <option value="co_final_result-pass">QC Check-out - Pass</option>
+          <option value="co_final_result-fail">QC Check-out - Fail</option>
+        </select>
+
+      </div>
+    </c-col>
+
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Khoá</h6>
+      </span>
+      <div class="">
+        <select style="width:100%; padding:6px 12px; border: 1px solid #dbdfe6" cSelect [(ngModel)]="qc_lock">
+          <option value="-1">Tất cả</option>
+          <option value="0">Chưa khoá</option>
+          <option value="1">Đã khoá</option>
+        </select>
+      </div>
+    </c-col>
+
+    <c-row class="p-2">
+      <div style="display: flex; gap:5px">
+        <button cButton color="primary" (click)="filter(1)"> <svg cIcon name="cilSearch"></svg> Tìm
+          kiếm</button>
+        <button cButton color="primary" (click)="export()"> <svg cIcon name="cilDataTransferDown"></svg>
+          Export</button>
+      </div>
+    </c-row>
+  </c-row>
+</c-card>
+
+<div class="fade show" *ngIf="this.isLoading"
+  style="text-align: center; height: 20vh ; padding-top:calc(20vh / 2); background-color: white;">
+  <i class="spinner-grow spinner-grow-sm text-success"></i>
+  <span class="m-1 text-success">Đang load dữ liệu</span>
+</div>
+
+<c-toast [autohide]="true" [delay]="2000" [visible]="visible_toast"
+  style="position:fixed; top:80px ; right:0 ; background-color:cornflowerblue; color:white; z-index: 1000;">
+  <c-toast-header>
+    <strong class="mr-auto">Thông báo</strong>
+  </c-toast-header>
+  <c-toast-body>
+    {{ message_toast }}
+  </c-toast-body>
+</c-toast>
+
+<table class="table" *ngIf="listAttendance && !this.isLoading">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Employee</th>
+      <th *ngIf="isIT">KQ CI</th>
+      <th>KQ CI QC</th>
+      <th>Lý Do CI Fail</th>
+      <th *ngIf="isIT">KQ CO</th>
+      <th>KQ CO QC</th>
+      <th>Lý do CO Fail</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let item of listAttendance; let i = index">
+      <tr>
+        <td>
+          <button (click)="toggleRow(i)" cButton color="primary">
+            {{ expandedRows[i] ? '-' : '+' }}
+          </button>
+        </td>
+        <td>{{ item.att_code }} - {{ item.emp_name }}</td>
+        <td *ngIf="isIT">CI AI: {{ item.ci_result}} <svg *ngIf="!item.ci_result" cIcon name="cilWindowMinimize"></svg> </td>
+        <td>CI QC: {{ item.ci_final_result }} <svg *ngIf="!item.ci_final_result" cIcon name="cilWindowMinimize"></svg>
+        </td>
+        <td>{{ item.ci_fail_reason || 'Không có' }}</td>
+        <td *ngIf="isIT">CO AI: {{ item.co_result }} <svg *ngIf="!item.co_result" cIcon name="cilWindowMinimize"></svg></td>
+        <td>CO QC: {{ item.co_final_result }} <svg *ngIf="!item.co_final_result" cIcon name="cilWindowMinimize"></svg>
+        </td>
+        <td>{{ item.co_fail_reason || 'Không có' }}</td>
+        <td>
+          <div style="cursor: pointer" [ngStyle]="{ color: item.qc_lock === 1 ? 'red' : 'black' }"
+            (click)="openConfirmModal(item)">
+            <svg *ngIf="item.qc_lock === 1" cIcon name="cilLockLocked"></svg>
+            <svg *ngIf="item.qc_lock === 0 || item.qc_lock == null " cIcon name="cilLockUnlocked"></svg>
+            {{ item.qc_lock === 1 ? 'Đã khoá' : 'Khoá' }}
+          </div>
+        </td>
+      </tr>
+
+      <tr *ngIf="expandedRows[i]">
+        <td colspan="9">
+          <div style="display: flex; gap:20px">
+            <c-card>
+              <c-card-body style="text-align: center;">
+                <div style="display:flex;gap:50px;">
+                  <div style="padding: 15px;">
+                    <label for="" style="width: 100%;font-weight: bold; ">Hình Profile</label>
+                    <p>-------</p>
+
+                    <img *ngIf="item.image" [src]="item.image" alt="img" width="250" height="250">
+                    <img *ngIf="!item.image" src="../../../../assets/images/avatars/default-avatar.jpg" alt=""
+                      width="250" height="250">
+
+                  </div>
+                  <div class="checkin-container">
+                    <label for="" style="width: 100%;">Check-in</label>
+                    <p *ngIf="item.ci_time">{{ item.ci_time | date: 'dd/MM/yyyy HH:mm:ss' }}</p>
+                    <p *ngIf="!item.ci_time">--/--/---</p>
+
+                    <img *ngIf="item.ci_photo" [src]="item.co_photo" alt="img-check-out" width="250" height="250">
+                    <img *ngIf="!item.ci_photo" src="../../../../assets/images/avatars/default-avatar.jpg" alt=""
+                      width="250" height="250">
+
+                    <div *ngIf="item.ci_photo">
+                      <div style="padding: 15px;" *ngIf="isIT">
+                        <h4
+                          style="margin: 0 0 10px; text-align: center; font-size: 16px; font-weight: bold; color: #333;">
+                          AI Detect Result
+                        </h4>
+
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                          <label style="display: flex; justify-content: space-between; align-items: center;">
+                            <span>Face ID:</span>
+                            <select cSelect [(ngModel)]="item.ci_FaceVerifyOk"
+                              (change)="updateSwitchATDAI_CI(item,'faceId')" [disabled]="item.qc_lock === 1"
+                              style="padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                              <option [value]="1">Đúng</option>
+                              <option [value]="0">Sai</option>
+                            </select>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="form-container my-3">
+                        <div class="radio-group" style="display: flex; gap: 15px; justify-content: center;">
+                          <c-form-check>
+                            <input cFormCheckInput type="radio" value="pass" [name]="'flexRadioCheck' + i"
+                              [disabled]="item.qc_lock === 1" [(ngModel)]="ci_final_result[i]" />
+                            <label cFormCheckLabel>Đạt</label>
+                          </c-form-check>
+
+                          <c-form-check>
+                            <input cFormCheckInput type="radio" value="fail" [name]="'flexRadioCheck' + i"
+                              [disabled]="item.qc_lock === 1" [(ngModel)]="ci_final_result[i]" />
+                            <label cFormCheckLabel>Không đạt</label>
+                          </c-form-check>
+                        </div>
+
+                        <div *ngIf="ci_final_result[i] === 'fail'" class="fail-options"
+                          style="display: flex; flex-direction: column; align-items: baseline;">
+                          <div *ngFor="let itemDetail of listFailAttendance">
+                            <c-form-check>
+                              <input cFormCheckInput [id]="item.key + i" type="checkbox" [disabled]="item.qc_lock === 1"
+                                [checked]="isCheckedCI(i, itemDetail.label)"
+                                (change)="handleCheckboxChange(i, itemDetail.label, $event,true)" />
+                              <label cFormCheckLabel>
+                                {{ itemDetail.label}}
+                              </label>
+                            </c-form-check>
+                          </div>
+                        </div>
+                        <div style="text-align: center;" *ngIf="item.qc_lock !== 1">
+                          <button (click)="updateCheckAttendance(i)" cButton color="warning" style="margin: 10px 0;">
+                            Cập nhật
+                            <svg cIcon name="cilSave"></svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </c-card-body>
+            </c-card>
+
+            <c-card>
+              <c-card-body style="text-align: center;">
+                <div class="checkin-container">
+                  <label for="">Check-out</label>
+                  <p *ngIf="item.co_time">{{ item.co_time | date: 'dd/MM/yyyy HH:mm:ss' }}</p>
+                  <p *ngIf="!item.co_time">--/--/---</p>
+                  <img *ngIf="item.co_photo" [src]="item.co_photo" alt="img-check-out" width="250" height="250">
+                  <img *ngIf="!item.co_photo" src="../../../../assets/images/avatars/default-avatar.jpg" alt=""
+                    width="250" height="250">
+
+                  <div *ngIf="item.co_photo">
+                    <div style="padding: 15px;" *ngIf="isIT">
+                      <h4
+                        style="margin: 0 0 10px; text-align: center; font-size: 16px; font-weight: bold; color: #333;">
+                        AI Detect Result
+                      </h4>
+
+                      <div style="display: flex; flex-direction: column; gap: 10px">
+                        <label style="display: flex; justify-content: space-between; align-items: center;">
+                          <span>Face ID:</span>
+                          <select cSelect [(ngModel)]="item.co_FaceVerifyOk"
+                            (change)="updateSwitchATDAI_CO(item,'faceId')" [disabled]="item.qc_lock === 1"
+                            style="padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                            <option [value]="1">Đúng</option>
+                            <option [value]="0">Sai</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="form-container" class="my-3">
+                      <div class="radio-group">
+                        <c-form-check>
+                          <input cFormCheckInput type="radio" value="pass" [name]="flexRadioCheck_CO + i" id="pass_co"
+                            [disabled]="item.qc_lock === 1" [(ngModel)]="co_final_result[i]" />
+                          <label cFormCheckLabel for="pass">Đạt</label>
+                        </c-form-check>
+                        <c-form-check>
+                          <input cFormCheckInput type="radio" value="fail" [name]="flexRadioCheck_CO+i" id="fail_co"
+                            [disabled]="item.qc_lock === 1" [(ngModel)]="co_final_result[i]" />
+                          <label cFormCheckLabel for="fail">Không đạt</label>
+                        </c-form-check>
+                      </div>
+
+                      <div *ngIf="co_final_result[i] === 'fail'" class="fail-options">
+                        <div *ngFor="let itemFail of listFailAttendance">
+                          <c-form-check>
+                            <input cFormCheckInput [id]="itemFail.key + i" type="checkbox"
+                              [disabled]="item.qc_lock === 1" [checked]="isCheckedCO(i, itemFail.label)"
+                              (change)="handleCheckboxChange(i, itemFail.label, $event,false)" />
+                            <label cFormCheckLabel>
+                              {{ itemFail.label}}
+                            </label>
+                          </c-form-check>
+                        </div>
+                      </div>
+
+                      <div *ngIf="item.qc_lock !== 1">
+                        <button (click)="updateCheckAttendanceCO(i)" cButton color="warning" style="margin: 10px 0;">
+                          Cập nhật
+                          <svg cIcon name="cilSave"></svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </c-card-body>
+
+            </c-card>
+          </div>
+        </td>
+      <tr>
+    </ng-container>
+  </tbody>
+</table>
+
+<c-modal [(visible)]="confirmLockVisible">
+  <c-modal-header>
+    <h5 class="modal-title">Xác nhận khoá</h5>
+    <button class="btn-close" (click)="confirmLockVisible = false"></button>
+  </c-modal-header>
+  <c-modal-body>
+    Bạn có chắc chắn muốn khoá kết quả này không?
+  </c-modal-body>
+  <c-modal-footer>
+    <button class="btn btn-secondary" (click)="confirmLockVisible = false">Hủy</button>
+    <button class="btn btn-primary" (click)="confirmAction()">Xác nhận</button>
+  </c-modal-footer>
+</c-modal>
+
+<c-smart-pagination *ngIf="listAttendance" [activePage]="1" [pages]="pagination" align="center"
+  (activePageChange)="onPageChange($event)"></c-smart-pagination>

@@ -1,0 +1,114 @@
+<c-toast [autohide]="true" [delay]="2000" [visible]="toast.visible_toast"
+    style="position:fixed; top:80px ; right:0 ; background-color:cornflowerblue; color:white; z-index: 1000;">
+    <c-toast-header>
+        <strong class="mr-auto">Thông báo</strong>
+    </c-toast-header>
+    <c-toast-body class="{{ toast.background }}">
+        {{ toast.message_toast }}
+    </c-toast-body>
+</c-toast>
+<div class="container1">
+    <div class="col-12 mt-1" style="text-align: center;">
+    </div>
+
+    <div class=" col-12" style="text-align: center;">
+        <div class="card">
+            <div class="row">
+
+
+                <c-col md="3">
+
+                    <div class="upload-content text-center p-2" style="margin-top: 5%;">
+                        <input type="file" #fileUploader hidden multiple accept="image/*" (change)="onUpload($event)">
+                        <button cButton color="primary" (click)="fileUploader.click()">
+                            Chọn Hình
+                        </button>
+                        <p class="mt-2 small text-muted">
+                        </p>
+                    </div>
+
+                </c-col>
+                <c-col md="3">
+                    <span class="clearfix">
+                        <h6 class="pt-2">Chọn Project</h6>
+                    </span>
+
+                    <select cSelect [(ngModel)]="selected_project"
+                        style="padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                        <option [value]="6">UMER PROMOTION Demo</option>
+                        <option [value]="1">UMER Demo</option>
+                        <option [value]="0">PEPSI ALL</option>
+                        <option [value]="3">PEPSI Demo</option>
+                        <option [value]="3">ABBOTT_LOGO Demo</option>
+                        <option [value]="2">KEN Demo</option>
+                        <option [value]="4">OTHER Demo</option>
+                    </select>
+
+                </c-col>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="result.length>0" class="mt-5">
+
+        <c-col xs="12" *ngFor="let item of result;index as i" class="mt-5">
+            <div class="card" class="mt-3">
+                <b>{{i+1}}/{{qty_image}} Tổng nhãn detect được:
+                    {{item.qty_product!==0?item.qty_product:item.qty_productapi}} </b>
+                <p style="cursor: pointer; font-size: 13px;font-weight: bold;float: right;
+                        right: 55px;
+                        position: relative;" (click)="copyToClipboard(item.nameFile)">
+                    Copy tên file <i style="font-size: 15px;" class="pi pi-copy"></i></p>
+
+
+                <c-col xs="12" class="mt-3">
+                    <div class="row">
+
+                        <c-col xs="9">
+
+                            <img cImg fluid src="{{item.img}}" width="100%" (dblclick)="onDoubleClick($event)" />
+                            <!-- </div> -->
+                        </c-col>
+                        <c-col xs="3">
+                            <div style="top: 9%; position: sticky;max-height: 85vh;overflow-y: auto;">
+                                <table style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Tên nhãn</th>
+                                            <th>Số lượng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {{ product|json}}
+                                        <tr *ngFor="let product of item.product;index as i"
+                                            [ngStyle]="{'color': product.bgColor ? 'white' : 'black','background-color': product.bgColor,'font-weight': '600'}">
+                                            <td style="padding: 10px;">{{ product.id}} </td>
+                                            <td>{{product.product_name}}</td>
+                                            <td>{{product.qty}}</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </c-col>
+                    </div>
+                </c-col>
+            </div>
+        </c-col>
+    </div>
+
+
+    <div style="z-index: 1;" *ngIf="preloading">
+        <ul class="preload">
+            <li data-title="L">L</li>
+            <li data-title="O">O</li>
+            <li data-title="A">A</li>
+            <li data-title="D">D</li>
+            <li data-title="I">I</li>
+            <li data-title="N">N</li>
+            <li data-title="G">G</li>
+        </ul>
+    </div>
+
+</div>

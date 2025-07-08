@@ -1,0 +1,333 @@
+<c-card class="mt-1 mb-1">
+    <c-row class="p-2">
+        <c-col md="3">
+            <span class="clearfix">
+                <h6 class="pt-3">Từ ngày</h6>
+            </span>
+            <c-date-picker inputReadOnly [(ngModel)]="from_date" #datePicker="cDatePicker"
+                [calendarDate]="calendarFromDate" />
+        </c-col>
+        <!-- <c-col md="3">
+            <span class="clearfix">
+                <h6 class="pt-3">Đến ngày</h6>
+            </span>
+            <c-date-picker inputReadOnly [(ngModel)]="to_date" #datePicker="cDatePicker"
+                [calendarDate]="calendarToDate" />
+        </c-col> -->
+        <!-- <c-col md="3">
+            <span class="clearfix">
+                <h6 class="pt-3">Nhân viên</h6>
+            </span>
+            <c-input-group class="input-prepend">
+                <span cInputGroupText>
+                    <svg cIcon name="cilMagnifyingGlass"></svg>
+                </span>
+                <input cFormControl placeholder="Nhân viên" type="text" [(ngModel)]="employee_code" />
+            </c-input-group>
+        </c-col> -->
+
+
+        <!-- <c-col md="3">
+            <span class="clearfix">
+                <h6 class="pt-3">Hình Detect</h6>
+            </span>
+            <select style="width:100%; padding:6px 12px; border: 1px solid #dbdfe6" cSelect
+                [(ngModel)]="selected_statusDetectURL">
+
+                <option [value]=-1>Tất cả</option>
+                <option [value]=1>Có hình detect</option>
+                <option [value]=0>Chưa có hình detect</option>
+            </select>
+        </c-col> -->
+
+    </c-row>
+    <hr />
+    <c-row class="p-2">
+        <c-col md="12">
+            <button cButton color="primary" (click)="filter(currentPage)">Tìm kiếm</button>
+        </c-col>
+    </c-row>
+</c-card>
+
+<c-card>
+
+
+    <c-row *ngIf="this.listShop && this.listShop.length > 0">
+        <c-col xs="12">
+            <c-card>
+                <c-card-body class="card-data">
+                    <c-smart-table #smartTable="cSmartTable" [columns]="columnShop" header [itemsPerPageSelect]="true"
+                        [itemsPerPage]="20" [items]="this.listShop" loading
+                        [tableProps]="{ hover: true,bordered:true, striped: false, responsive: true }">
+
+                        <ng-template cTemplateId="tableData" let-columnName="columnName" let-item="item"
+                            let-tdContent="tdContent">
+                            <td [cAlign]="smartTable.getTableDataCellProps(item, columnName)?.['align']"
+                                [cTableActive]="smartTable.getTableDataCellProps(item, columnName)?.['active']"
+                                [cTableColor]="smartTable.getTableDataCellProps(item, columnName)?.['color']"
+                                [ngClass]="smartTable.getTableDataCellClass(item, columnName)">
+                                @switch (columnName) {
+                                @case ('show') {
+                                <button (click)=" toggleDetails(item)" cButton color="primary">
+                                    <svg cIcon
+                                        name="{{this.details_visible[item.shop_code]?.visible === true ? 'cilMinus' : 'cilPlus'}}"></svg>
+                                </button>
+                                }
+
+                                @default {
+                                {{ tdContent }}
+                                }
+                                }
+                            </td>
+                        </ng-template>
+                        <ng-template cTemplateId="tableDetails" let-item="item">
+                            <div [visible]="this.details_visible[item.shop_code]?.visible" cCollapse>
+                                <c-row class="bg-light-subtle p-1 w-100 text-center">
+                                    <c-col lg="7">
+                                        <div class="table-container overflow">
+
+                                            <c-smart-table #smartTable="cSmartTable" [columns]="columnProduct"
+                                                [columnFilter]="true" [columnSorter]="true" header
+                                                [itemsPerPageSelect]="true" [itemsPerPage]="500"
+                                                [itemsPerPageOptions]="[500, 1000]"
+                                                [items]="this.details_visible[item.shop_code]?.productsDetails" loading
+                                                [tableProps]="{ hover: true,bordered:true, striped: false, responsive: true }">
+
+                                                <ng-template cTemplateId="tableData" let-columnName="columnName"
+                                                    let-item1="item" let-tdContent="tdContent">
+                                                    <td [cAlign]="smartTable.getTableDataCellProps(item1, columnName)?.['align']"
+                                                        [cTableActive]="smartTable.getTableDataCellProps(item1, columnName)?.['active']"
+                                                        [cTableColor]="smartTable.getTableDataCellProps(item1, columnName)?.['color']"
+                                                        [ngClass]="smartTable.getTableDataCellClass(item1, columnName)">
+                                                        <ng-container [ngSwitch]="columnName">
+<ng-container *ngSwitchCase="'sumQC'">
+                                    <c-input-group>
+                                        <input cFormControl type="number" placeholder="blank = Facing Detected"
+                                             [(ngModel)]="item1.sumQC"
+                                            (ngModelChange)="onSkuFacingChange_2(item1, $event,item.shop_code)" [ngStyle]="{
+                              'text-align': 'center'}" />
+                                    </c-input-group>
+                                </ng-container>
+                                
+                             
+
+                                                            <ng-container *ngSwitchDefault>
+                                                                {{ tdContent }}
+                                                            </ng-container>
+                                                        </ng-container>
+                                                    </td>
+                                                </ng-template>
+                                            </c-smart-table>
+                                             <button cButton color="primary" (click)="SaveDetail_Total(this.details_visible[item.shop_code]?.productsDetails,item.shop_code)">Lưu</button>
+                                        </div>
+
+
+ <!-- 'font-weight': item.sku_facing && item.sku_facing_ai !== item.sku_facing ? 'bold' : '',
+                              'color': item.sku_facing && item.sku_facing_ai !== item.sku_facing ? 'red' : ''
+                            }" [disabled]="details_visible[item.detect_id]?.detect_verify === 1" -->
+                                    </c-col>
+                                    <c-col lg="5">
+
+
+                                        <c-carousel *ngIf="details_visible[item.shop_code]?.detectDetails?.length > 0"
+                                            [dark]="true" [wrap]="false">
+
+                                            <c-carousel-indicators />
+                                            <c-carousel-inner>
+
+                                                @for (slide of details_visible[item.shop_code]?.detectDetails; track
+                                                slide.detect_id) {
+                                                <c-carousel-item>
+
+                                                    <div id="downloadImage"
+                                                        style="cursor: pointer;padding-left: 150px; text-align: left; z-index: 999;"
+                                                        (click)="downloadImage(slide.photo_url)">
+                                                        <svg cIcon name="cil-arrow-thick-to-bottom" size="lg"></svg>
+                                                    </div>
+
+                                                    <img *ngIf="!slide.detect_url" [src]="slide.photo_url" alt="image"
+                                                        class="d-block" style="width: 90%;" loading="lazy"
+                                                        [cModalToggle]="verticallyCenteredScrollableModal.id"
+                                                        (click)="handleSelectedImg(slide,item.shop_code)" />
+
+                                                    <!-- (click)="openImageInNewWindow(slide.detect_url, 1)" -->
+                                                    <div *ngIf="slide.detect_url" (click)="handleSelectedImg(slide,item.shop_code)"
+                                                        [cModalToggle]="verticallyCenteredScrollableModal.id">
+                                                        <object style="pointer-events: none;" type="image/svg+xml"
+                                                            [attr.data]="slide.detect_url"></object>
+                                                    </div>
+                                                    <c-carousel-caption class="d-none d-md-block">
+                                                        <h3>Detect Id : {{ slide.detect_id }}</h3>
+                                                    </c-carousel-caption>
+                                                </c-carousel-item>
+                                                }
+                                            </c-carousel-inner>
+                                            <c-carousel-control [routerLink] [size]="'xl'" caption="Previous"
+                                                direction="prev"></c-carousel-control>
+                                            <b><c-carousel-control [routerLink] caption="Next"
+                                                    direction="next"></c-carousel-control></b>
+
+                                            <!-- <c-carousel-control direction="prev">
+                                                    <i class="custom-icon bi bi-chevron-left"></i>
+                                                    </c-carousel-control>
+                                                    <c-carousel-control direction="next">
+                                                    <i class="custom-icon bi bi-chevron-right"></i>
+                                                    </c-carousel-control> -->
+                                        </c-carousel>
+
+                                    </c-col>
+                                </c-row>
+                            </div>
+                        </ng-template>
+                    </c-smart-table> </c-card-body>
+                <c-smart-pagination [activePage]="currentPage" [pages]="totalPages" align="center"
+                    (activePageChange)="onPageChange($event)">
+                </c-smart-pagination>
+
+
+            </c-card>
+        </c-col>
+    </c-row>
+
+
+</c-card>
+<!-- <c-modal #verticallyCenteredScrollableModal [scrollable]="true" [fullscreen]="'xxl'" alignment="center"
+    id="verticallyCenteredScrollableModal" [visible]="visible" (visibleChange)="handleLiveDemoChange($event)">  [size]="'xl'"-->
+<c-modal #verticallyCenteredScrollableModal class="modal-fullscreen" id="verticallyCenteredScrollableModal"
+    (visibleChange)="handleLiveDemoChange($event)" alignment=" center" [scrollable]="true"  [visible]="visible">
+
+    <div class="table-container">
+        <c-row class="bg-light-subtle p-1 w-100 text-center"><c-col lg="7"><c-smart-table #smartTable="cSmartTable"
+                    [columns]="columnss" [columnFilter]="true" [columnSorter]="true" header [itemsPerPageSelect]="true"
+                    [itemsPerPage]="200" [itemsPerPageOptions]="[200, 1000]"
+                    [items]="this.selecteddetectDetect?.dataDetails" loading
+                    [tableProps]="{ hover: true,bordered:true, striped: false, responsive: true }">
+
+                    <ng-template cTemplateId="tableData" let-columnName="columnName" let-item="item"
+                        let-tdContent="tdContent">
+                        <td [cAlign]="smartTable.getTableDataCellProps(item, columnName)?.['align']"
+                            [cTableActive]="smartTable.getTableDataCellProps(item, columnName)?.['active']"
+                            [cTableColor]="smartTable.getTableDataCellProps(item, columnName)?.['color']"
+                            [ngClass]="smartTable.getTableDataCellClass(item, columnName)">
+                            <ng-container [ngSwitch]="columnName">
+
+                                <ng-container *ngSwitchCase="'sku_facing'">
+                                    <c-input-group>
+                                        <input cFormControl type="number" placeholder="blank = Facing Detected"
+                                            name="sku_facing" [(ngModel)]="item.sku_facing"
+                                            (ngModelChange)="onSkuFacingChange(item, $event,this.selecteddetectDetect)" [ngStyle]="{
+                              'text-align': 'center',
+                              'font-weight': item.sku_facing && item.sku_facing_ai !== item.sku_facing ? 'bold' : '',
+                              'color': item.sku_facing && item.sku_facing_ai !== item.sku_facing ? 'red' : ''
+                            }" [disabled]="details_visible[item.detect_id]?.detect_verify === 1" />
+                                    </c-input-group>
+                                </ng-container>
+
+                                <ng-container *ngSwitchCase="'actions'">
+                                    <div style="cursor: pointer" (click)="RemoveItemDetail(item)">
+                                        <svg style="color: brown;" cIcon name="cilTrash"></svg>
+                                    </div>
+                                </ng-container>
+
+                                <ng-container *ngSwitchDefault>
+                                    {{ tdContent }}
+                                </ng-container>
+
+                            </ng-container>
+                        </td>
+                    </ng-template>
+
+
+                </c-smart-table>
+                        <!--  -->
+    <div style="display: flex; justify-content: end; align-items: center;z-index: 100; gap: 5px;margin-top: 13px;">
+      <label>Sản phẩm thiếu: </label>
+      <ng-select style="min-width: 380px;z-index: 100;" [items]="listSKU" bindLabel="sku_name" 
+        bindValue="sku_id"  placeholder="Chọn sản phẩm"  [(ngModel)]="selectedSKU"  [searchable]="true"
+        class="custom-ng-select">
+      </ng-select>
+
+      <c-input-group class="input-prepend" style="width: fit-content;">
+        <input cFormControl style="width: 70px;" cFormControlplaceholder="Nhập số lượng" type="text"
+          [(ngModel)]="sku_facing" />
+      </c-input-group>
+      <button cButton color="primary" (click)="insertDetailSKU()">Thên sản
+        phẩm</button>
+    </div>
+    <!-- item.detect_id,item -->
+    <!--  -->
+            </c-col>
+
+            <c-col lg="5">
+                <c-carousel [dark]="true" [wrap]="false">
+                    <c-carousel-indicators></c-carousel-indicators>
+                    <c-carousel-inner>
+                        @for (slide of this.selecteddetectDetect?.photoDetails; track
+                        slide.src;let idx =$index) {
+
+                        <div class="{{idx === 0 ? 'carousel-item active' : 'carousel-item'}}"
+                            data-coreui-interval="-99999999">
+                            <div style="cursor: pointer;text-align: left;" (click)="downloadImage(slide.photo_url)"><svg
+                                    cIcon name="cil-arrow-thick-to-bottom" size="lg"></svg></div>
+
+                            <img *ngIf="!slide.src" [src]="slide.photo_url" alt="{{slide.title}}" class="d-block "
+                                style="width: 90%;" loading="lazy" (click)="openImageInNewWindow(slide.photo_url,2)" />
+                            <!-- (click)="showImage(slide._index,this.details_visible[item.detect_id]?.photoDetails)"  -->
+                            <div *ngIf="slide.src" (click)="openImageInNewWindow(slide.src,1)">
+                                <object style="pointer-events: none;" type="image/svg+xml" [attr.data]="slide.src">
+                                </object>
+                            </div>
+
+                        </div>
+                        }
+                    </c-carousel-inner>
+                    <!-- <c-carousel-control style="z-index: -999" [routerLink] caption="Previous"
+                        direction="prev"></c-carousel-control>
+                    <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control> -->
+                </c-carousel>
+
+            </c-col>
+
+        </c-row>
+
+
+
+    </div>
+
+
+
+
+    <c-modal-footer>
+        <button [cModalToggle]="verticallyCenteredScrollableModal.id" cButton color="secondary" style="z-index: 1;">
+            Close
+        </button>
+        <!-- {{selecteddetectDetect|json}} -->
+        <button cButton color="primary" style="z-index: 1;" (click)="SaveDetail(this.selecteddetectDetect?.dataDetails)">Lưu</button>
+    </c-modal-footer>
+</c-modal>
+
+<c-modal id="liveDemoModal" [visible]="visible2" (visibleChange)="handleLiveDemoChange2($event)">
+  <c-modal-header>
+    <h5 cModalTitle>Thông báo</h5>
+    <button (click)="toggleLiveDemo2()" cButtonClose></button>
+  </c-modal-header>
+  <c-modal-body>{{this.message}}</c-modal-body>
+</c-modal>
+<c-toast [autohide]="true" [delay]="2000" [visible]="toast.visible_toast"
+  style="position:fixed; top:80px ; right:0 ; background-color:cornflowerblue; color:white; z-index: 999999;">
+  <c-toast-header>
+    <strong class="mr-auto">Thông báo</strong>
+  </c-toast-header>
+  <c-toast-body class="{{ toast.background }}">
+    {{ toast.message_toast }}
+  </c-toast-body>
+</c-toast>
+<ngx-loading-bar [height]="'5px'" color="#ff0000"></ngx-loading-bar>
+<!-- 
+
+<div class="position-fixed end-0 bottom-0 m-4" style="cursor: pointer" (click)="handleScrollOnTop()">
+    <svg cIcon name="cilArrowCircleTop" class="bg-white rounded p-2" style="width: 40px; height: 40px;"></svg>
+</div> -->
+<!-- <c-smart-pagination [activePage]="currentPage" [pages]="totalPages" align="center"
+    (activePageChange)="onPageChange($event)">
+</c-smart-pagination> -->

@@ -1,0 +1,5798 @@
+[
+  
+  {
+    "name": "STING_DO_LON_330/320",
+    "color": "#742a5a",
+    "type": "rectangle",
+    "attributes": []
+  },
+ 
+  {
+    "name": "STING_DO_CHAI_330",
+    "color": "#84bff3",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+  
+  {
+    "name": "STING_VANG_CHAI_330",
+    "color": "#0e8df0",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "PEPSI_KHONG_CALO_LON_330/320",
+    "color": "#1d5aaa",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "PEPSI_LON",
+    "color": "#e3980f",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+  {
+    "name": "STING_VANG_LON_330/320",
+    "color": "#e649e3",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+  
+  {
+    "name": "PEPSI__VI_CHANH_KHONG_CALO_LON_330/320",
+    "color": "#c8050a",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "MIRINDA_CAM_LON_330/320",
+    "color": "#b1572a",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "MIRINDA_SODA_KEM_LON_330/320",
+    "color": "#e5fee4",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+  
+  {
+    "name": "NUMBER_1_NUOC_TANG_LUC_CHAI_330",
+    "color": "#e33104",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+  {
+    "name": "7UP_LON_320/330",
+    "color": "#9db6c3",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+  {
+    "name": "PEPSI_CHAI_1500/1750",
+    "color": "#2bae41",
+    "type": "rectangle",
+    "attributes": []
+  },
+
+  {
+    "name": "7UP_CHAI_1500/1750",
+    "color": "#4a4f1a",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "7UP_SODA_CHANH_LON_320/330",
+    "color": "#0f52b0",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "TEA+_CHANH_CHAI_455/450",
+    "color": "#122ffa",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "TEA+_NGUYEN_BAN_CHAI_455/450",
+    "color": "#ed4a97",
+    "type": "rectangle",
+    "attributes": []
+  },
+
+  {
+    "name": "PEPSI_CHAI_390",
+    "color": "#2743fa",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "PEPSI__VI_CHANH_KHONG_CALO_CHAI_390",
+    "color": "#32409a",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "TEA+_DAO_NHIET_DOI_CHAI_450",
+    "color": "#2df291",
+    "type": "rectangle",
+    "attributes": []
+  },
+
+  {
+    "name": "PEPSI_KHONG_CALO_CHAI_390",
+    "color": "#2f2a2a",
+    "type": "rectangle",
+    "attributes": []
+  },
+
+  {
+    "name": "PEPSI_VI_CHANH_KHONG_CALO_CHAI_1500",
+    "color": "#7d83bd",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+  {
+    "name": "7UP_CHAI_390",
+    "color": "#f1efff",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+  {
+    "name": "TEA+_OOLONG_XANH_CHAI_450",
+    "color": "#51762c",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "TEA+_KHONG_DUONG_CHAI_455/450",
+    "color": "#544487",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "STING_VIET_QUAT_LON_330/320",
+    "color": "#7ad04c",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "PEPSI_LON_245",
+    "color": "#4cbff6",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+  {
+    "name": "PEPSI_CHAI_600",
+    "color": "#1751e5",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "TEA+_CHANH_CHAI_1L",
+    "color": "#4738a8",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "MIRINDA_SARSI_LON_330/320",
+    "color": "#e8ae79",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+  {
+    "name": "TEA+_NGUYEN_BAN_CHAI_350/320",
+    "color": "#d8519d",
+    "type": "rectangle",
+    "attributes": []
+  },
+
+
+  {
+    "name": "TEA+_NGUYEN_BAN_CHAI_1L",
+    "color": "#b27b54",
+    "type": "rectangle",
+    "attributes": []
+  },
+
+
+  {
+    "name": "MIRINDA_SARSI_CHAI_390",
+    "color": "#e5334c",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+
+  {
+    "name": "PEPSI_CHAI_330",
+    "color": "#321149",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "MIRINDA_SODA_KEM_CHAI_1500/1750",
+    "color": "#47992b",
+    "type": "rectangle",
+    "attributes": []
+  },
+
+  {
+    "name": "MIRINDA_CAM_CHAI_390",
+    "color": "#e15314",
+    "type": "rectangle",
+    "attributes": []
+  },
+
+  {
+    "name": "TEA+_OOLONG_XANH_CHAI_1L",
+    "color": "#6e8027",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "7UP_CHAI_330",
+    "color": "#f68f93",
+    "type": "rectangle",
+    "attributes": []
+  },
+  {
+    "name": "PEPSI_LON_TET_330/320",
+    "color": "#f0efdb",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+  {
+    "name": "PEPSI_KHONG_DUONG_VI_PHUC_BON_TU_LON_320/330",
+    "color": "#34e62a",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+  {
+    "name": "MIRINDA_CAM_CHAI_1500/1750",
+    "color": "#bd06bc",
+    "type": "rectangle",
+    "attributes": []
+  },
+  
+  {
+    "name": "PACK_3_PEPSI_LON_330/320",
+    "color": "#180a94",
+    "type": "rectangle",
+    "attributes": []
+  },
+
+  {
+    "name": "TEA+_DAO_NHIET_DOI_CHAI_1L",
+    "color": "#fd4220",
+    "type": "rectangle",
+    "attributes": []
+  },
+ 
+  {
+    "name": "AQUA_500",
+    "color": "#d3f7b1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ROCKSTAR_LON",
+    "color": "#2c0ae5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "REVIVE_CHANH_MUOI",
+    "color": "#62258c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "REVIVE_CHAI_TRANG",
+    "color": "#35c4cd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "AQUAFINA_355",
+    "color": "#02cd76",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TWISTER_CHAI_455/450_VI_CAM",
+    "color": "#d3908c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "REVIVE_KHONG_CALO",
+    "color": "#0146b9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "AQUAFINA_1500",
+    "color": "#f69298",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TWISTER_CHAI_1000_VI_CAM",
+    "color": "#69983d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TWISTER_LON_320_VI_CAM",
+    "color": "#5cff78",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "AQUAFINA_LON_SODA",
+    "color": "#79bf9f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "GOODMOOD_SUA_CHUA_CHAI",
+    "color": "#35de55",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "AQUAFINA_5000",
+    "color": "#b939c9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "BOSS_LON_CA_PHE_SUA",
+    "color": "#572721",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MIRINDA_SODA_KEM_CHAI_390",
+    "color": "#39199d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "GOODMOOD_DAU_CHAI",
+    "color": "#373d97",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MIRINDA_SARSI_CHAI_1500/1750",
+    "color": "#a32e98",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TWISTER_CAM_TRAI_CAY_CHAI_320",
+    "color": "#9c4d4f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TWISTER_CHAI_350/320_VI_CAM",
+    "color": "#f4ff49",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TEA+_CHANH_CHAI_350/320",
+    "color": "#99622e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TWISTER_DAU_TRAI_CAY_CHAI_320",
+    "color": "#2d4fe8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_7UP_LON_330/320",
+    "color": "#a4df3f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PEPSI_KHONG_CALO_LON_330/320",
+    "color": "#37a15b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PEPSI_KHONG_CALO_VI_CHANH_LON_330/320",
+    "color": "#88311d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_STING_DO_LON_330/320",
+    "color": "#de5ad4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_ROCKSTAR",
+    "color": "#f64195",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_STING_DO_CHAI_330",
+    "color": "#ef2416",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_ROCKSTAR_LON_250",
+    "color": "#3b00ba",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MIRINDA_SODA_KEM_LON_330/320",
+    "color": "#60c8ff",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MIRINDA_CAM_CHAI_330",
+    "color": "#b0525a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_STING_DO_LON_330/320",
+    "color": "#582198",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TWISTER_LON_320_VI_CAM",
+    "color": "#b44a4b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "AM_196_LON_SODA_DAO",
+    "color": "#1f7cda",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PEPSI_CHAI_390",
+    "color": "#89ed29",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_REVIVE_CHANH_MUOI",
+    "color": "#0ebfb8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_STING_VANG_CHAI_330",
+    "color": "#f4b2c1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "AM_196_LON_SODA_CHANH",
+    "color": "#cacd9a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PEPSI_LON_330/320",
+    "color": "#466c64",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_STING_DO_CHAI_330",
+    "color": "#d3ab67",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_7UP_LON_320/330",
+    "color": "#170a21",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_STING_VANG_LON_330/320",
+    "color": "#8b7725",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "BIA_VIET_CHAI_330",
+    "color": "#88fe5d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "LARUE_BLUE_CHAI_355",
+    "color": "#37cc90",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TIGER_CRYSTAL_CHAI_330",
+    "color": "#16e2c4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "OLD_TIGER_CRYSTAL_LON_CAO_250/330",
+    "color": "#6cb7fd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "OLD_TIGER_LON_CAO_250/330",
+    "color": "#09ea4a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TIGER_CHAI_330",
+    "color": "#aed680",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HEINEKEN_CHAI_330",
+    "color": "#7d5386",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HEINEKEN_SILVER_CHAI_330",
+    "color": "#fa213a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "BIVINA_CHAI_450",
+    "color": "#694152",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "EDELWEISS_CHAI_330",
+    "color": "#089810",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TIGER_SOJU_MAN_CHAI_330",
+    "color": "#34a3a7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "STRONGBOW_DAO_LON_320/330",
+    "color": "#e5e779",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "STRONGBOW_TAO_VANG_CHAI_330",
+    "color": "#55c314",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TIGER_SOJU_DUA_LUOI_CHAI_330",
+    "color": "#56b2cf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HEINEKEN_LON_TET_250/330",
+    "color": "#cce5be",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "STRONGBOW_DAU_DO_CHAI_330",
+    "color": "#32437c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HEINEKEN_SILVER_LON_250/330",
+    "color": "#6acf8a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HEINEKEN_0.0_LON_250/330",
+    "color": "#120db3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_HEINEKEN_LON_250/330",
+    "color": "#a39974",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HEINEKEN_LON_250/330",
+    "color": "#6d09c5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HUDA_XANH_TET_LON_330",
+    "color": "#49941f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_HUDA_XANH_TET_LON_330",
+    "color": "#08fd40",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_LARUE_SPECIAL_LON_330",
+    "color": "#7a0548",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_LARUE_SPECIAL_LON_330",
+    "color": "#47f800",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_LARUE_BLUE_LON_330",
+    "color": "#81695a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_LARUE_BLUE_LON_330",
+    "color": "#f9b1ff",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_LARUE_SMOOTH_LON_330",
+    "color": "#64adb9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_LARUE_SMOOTH_LON_330",
+    "color": "#61a5db",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SAIGON_LAGER_CHAI_330",
+    "color": "#12b550",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SAIGON_GOLD_LON_CAO_330",
+    "color": "#c22cf6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SAIGON_GOLD_LON_CAO_330",
+    "color": "#d4111f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_STRONGBOW_DAU_DO_LON_320/330",
+    "color": "#c51107",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_STRONGBOW_DAU_DO_LON_320/330",
+    "color": "#0d6d5d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_STRONGBOW_NHO_DEN_LON_320/330/330",
+    "color": "#4add68",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_STRONGBOW_NHO_DEN_LON_320/330",
+    "color": "#af936c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_STRONGBOW_TAO_VANG_LON_320/330",
+    "color": "#681c14",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_STRONGBOW_TAO_VANG_LON_320/330",
+    "color": "#6b06a3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_STRONGBOW_DAO_LON_320/330",
+    "color": "#ed45e6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_STRONGBOW_DAO_LON_320/330",
+    "color": "#bf7650",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_STRONGBOW_DUA_LUU_LON_320/330",
+    "color": "#33bff7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_STRONGBOW_KIWI_THANH_LONG_LON_320/330",
+    "color": "#86d6a2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_STRONGBOW_DUA_LUU_LON_320/330",
+    "color": "#338beb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_STRONGBOW_KIWI_THANH_LONG_LON_320/330",
+    "color": "#12acaf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TIGER_CRYSTAL_LON_250/330",
+    "color": "#fa1468",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TIGER_CRYSTAL_LON_250/330",
+    "color": "#f0f41d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_1664_BLANC_LON_330",
+    "color": "#dc8018",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_1664_BLANC_LON_330",
+    "color": "#c982de",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_333_PILSNER_LON_330",
+    "color": "#d70300",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "333_PILSNER_CHAI_330",
+    "color": "#5f234d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_333_PILSNER_LON_330",
+    "color": "#8c0772",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_333_LON_LUN_330",
+    "color": "#16f84d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HUDA_XANH_CHAI_330",
+    "color": "#0a5b74",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HUDA_GOLD_LON_330",
+    "color": "#4fe9a9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HUDA_XANH_LON_330",
+    "color": "#999771",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_HUDA_GOLD_LON_330",
+    "color": "#99bf4a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_HUDA_XANH_LON_330",
+    "color": "#d5764e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SAIGON_EXPORT_DO_LON_330",
+    "color": "#b84dd8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SAIGON_EXPORT_DO_LON_330",
+    "color": "#fb918d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SAIGON_CHILL_LON_330",
+    "color": "#31841e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SAIGON_CHILL_LON_330",
+    "color": "#898181",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SAIGON_LAGER_LON_330",
+    "color": "#17ae7e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SAIGON_EXPORT_PREMIUM_CHAI_330",
+    "color": "#1377bb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SAIGON_EXPORT_PREMIUM_LON_330",
+    "color": "#3a2583",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SAIGON_EXPORT_PREMIUM_LON_330",
+    "color": "#94cc5a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SAIGON_SPECIAL_CHAI_330",
+    "color": "#6daac3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SAIGON_SPECIAL_LON_330",
+    "color": "#54a8f8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SAIGON_SPECIAL_LON_330",
+    "color": "#364748",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TUBORG_XANH_CHAI_330",
+    "color": "#2afcc6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TUBORG_XANH_TET_LON_330",
+    "color": "#ca3751",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TUBORG_XANH_LON_330",
+    "color": "#91dc28",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TUBORG_XANH_LON_330",
+    "color": "#e31c03",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_HA_NOI_PREMIUM_LON_330",
+    "color": "#3fa021",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HA_NOI_PREMIUM_LON_330",
+    "color": "#5816b8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TRUC_BACH_CHAI_330",
+    "color": "#93713e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CARLSBERG_DANISH_PILSNER_CHAI_330",
+    "color": "#73bf28",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CARLSBERG_SMOOTH_DRAUGHT_CHAI_330",
+    "color": "#c74a69",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CARLSBERG_SMOOTH_DRAUGHT_LON_330",
+    "color": "#b40dda",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CARLSBERG_DANISH_PILSNER_LON_330",
+    "color": "#ffd4f1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CARLSBERG_DANISH_PILSNER_LON_330",
+    "color": "#e88da8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CARLSBERG_DANISH_PILSNER_TET_LON_330",
+    "color": "#1ce81b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CARLSBERG_DANISH_PILSNER_TET_LON_330",
+    "color": "#ab684d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CARLSBERG_SMOOTH_DRAUGHT_LON_330",
+    "color": "#12a6ff",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CARLSBERG_SMOOTH_DRAUGHT_LON_330",
+    "color": "#bb6956",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SOMERSBY_VI_MAM_XOI_LON_330",
+    "color": "#ca93a0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SOMERSBY_VI_MAM_XOI_LON_330",
+    "color": "#adfc53",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SOMERSBY_VI_TAO_LON_330",
+    "color": "#3b8275",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SOMERSBY_VI_TAO_LON_330",
+    "color": "#e2943d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SAN_MIG_LIGHT_CHAI_330",
+    "color": "#4aa2dd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SAN_MIGUEL_CERVEZA_BLANCA_LON_490",
+    "color": "#bb62ba",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SAN_MIGUEL_CERVEZA_NEGRA_LON_330",
+    "color": "#77a338",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SAN_MIGUEL_PALE_PILSEN_LON_330/500",
+    "color": "#aeb9ac",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SAN_MIG_LIGHT_LON_330/500",
+    "color": "#2c68da",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SAN_MIG_LIGHT_LON_330/500",
+    "color": "#076dcd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SOMERSBY_VI_MAM_XOI_CHAI_330",
+    "color": "#221c96",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SOMERSBY_VI_TAO_CHAI_330",
+    "color": "#a3b50c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "BECKS_ICE_LON_330",
+    "color": "#60b716",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "BECKS_ICE_LON_CAO_500",
+    "color": "#a5c59f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "BECKS_LON_330",
+    "color": "#f4e24b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "BECKS_LON_CAO_500",
+    "color": "#a97ac8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_BUDWEISER_BUDVAR_LON_500",
+    "color": "#62f93d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_BUDWEISER_SLEEK_LON_330/500",
+    "color": "#bea815",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_BUDWEISER_BUDVAR_LON_500",
+    "color": "#521177",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CORONA_EXTRA_LON_330/355",
+    "color": "#20404d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HOEGAARDEN_PEACH_CHAI_330",
+    "color": "#7b7db8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HOEGAARDEN_ROSEE_LON_330",
+    "color": "#12444e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SAPPORO_PREMIUM_CHAI_330",
+    "color": "#d60106",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SAPPORO_PREMIUM_LON_330",
+    "color": "#e013e9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SAPPORO_PREMIUM_LON_330",
+    "color": "#5992dd",
+    "type": "any",
+    "attributes": []
+  },
+
+  {
+    "name": "SPRITE_CHAI_600",
+    "color": "#ffa286",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SPRITE_CHAI_390",
+    "color": "#0da31a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SPRITE_LON_320",
+    "color": "#f70c77",
+    "type": "any",
+    "attributes": []
+  },
+  
+ 
+  {
+    "name": "DR_THANH_KHONG_DUONG_CHAI_330",
+    "color": "#1adde7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_DR_THANH_CHAI_330/455",
+    "color": "#1045c4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_DR_THANH_CHAI_330/455",
+    "color": "#f273eb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "NUMBER_1_NUOC_SUOI_CHAI_500",
+    "color": "#080453",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_NUMBER_1_NUOC_TANG_LUC_CHAI_330",
+    "color": "#f141d5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_NUMBER_1_NUOC_TANG_LUC_CHAI_330",
+    "color": "#96d6b6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_RED_BULL_THAI_VANG_LON_250",
+    "color": "#64c4cb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_WARRIOR_THAI_VI_DAU_LON_325",
+    "color": "#5894bb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_WARRIOR_THAI_VI_NHO_LON_325",
+    "color": "#2989fc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_WARRIOR_THAI_VI_DAU_LON_325",
+    "color": "#675889",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_WARRIOR_THAI_VI_NHO_LON_325",
+    "color": "#c01923",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TIGER_PLATINUM_LON_250/330",
+    "color": "#3bf2b6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TIGER_PLATINUM_LON_250/330",
+    "color": "#83f4bd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TIGER_SOJU_MAN_LON_330",
+    "color": "#3f522a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TIGER_SOJU_MAN_LON_330",
+    "color": "#e9795a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TIGER_SOJU_DUA_LUOI_LON_330",
+    "color": "#9fa724",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TIGER_SOJU_DUA_LUOI_LON_330",
+    "color": "#71b9d2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TIGER_LON_250/330",
+    "color": "#66f02c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TIGER_LON_250/330",
+    "color": "#d607d3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TIGER_CRYSTAL_COOL_PACK_LON_250",
+    "color": "#594cf4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TUBORG_XANH_TET_LON_330",
+    "color": "#f0a341",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TUBORG_XANH_TET_LON_330",
+    "color": "#ac3454",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TUBORG_ICE_TET_LON_330",
+    "color": "#dd3548",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TUBORG_ICE_LON_330",
+    "color": "#dcecfc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TUBORG_ICE_LON_330",
+    "color": "#72c409",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_EDELWEISS_LON_330",
+    "color": "#cffece",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HA_NOI_NHAN_VANG_TET_LON_330",
+    "color": "#2de599",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_HA_NOI_NHAN_VANG_LON_330",
+    "color": "#8e95af",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TRUC_BACH_LON_330",
+    "color": "#50e874",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TRUC_BACH_LON_330",
+    "color": "#3344f4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SOMERSBY_VI_MAM_XOI_CHAI_330",
+    "color": "#423ad4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SOMERSBY_VI_MAM_XOI_CHAI_330",
+    "color": "#98b99c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SOMERSBY_VI_TAO_CHAI_330",
+    "color": "#046ca0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SOMERSBY_VI_TAO_CHAI_330",
+    "color": "#9fb9d5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SAN_MIGUEL_TRAI_CAY_VI_VAI_LON_330",
+    "color": "#b9fd48",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SAN_MIGUEL_TRAI_CAY_VI_VAI_LON_330",
+    "color": "#3ab602",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "BUDWEISER_BUDVAR_DARK_4_7_CHAI_330",
+    "color": "#e1c39b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "BUDWEISER_SLEEK_CHAI_NHOM_TET_330",
+    "color": "#56041e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "BUDWEISER_SLEEK_CHAI_NHOM_330",
+    "color": "#3fe3a3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_BUDWEISER_SLEEK_FIFA_WC_LON_330",
+    "color": "#1e595c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HOEGAARDEN_PEACH_LON_500",
+    "color": "#e83148",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HOEGAARDEN_WHITE_LON_330",
+    "color": "#5b2073",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_HOEGAARDEN_WHITE_LON_330",
+    "color": "#e0c764",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_HOEGAARDEN_PEACH_LON_500",
+    "color": "#19835b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SAPPORO_PREMIUM_100_MALT_LON_330",
+    "color": "#db0327",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SAPPORO_PREMIUM_100_MALT_LON_330",
+    "color": "#aa8dab",
+    "type": "any",
+    "attributes": []
+  },
+ 
+  {
+    "name": "PACK_2_BIA_VIET_LON_330",
+    "color": "#585bd9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_BIA_VIET_LON_330",
+    "color": "#f39008",
+    "type": "any",
+    "attributes": []
+  },
+  
+  {
+    "name": "PACK_2_PEPSI_CHAI_1500/1750",
+    "color": "#f5bd04",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PEPSI_CHAI_330",
+    "color": "#646fd2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PEPSI_CHAI_390",
+    "color": "#2f7c49",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PEPSI_CHAI_600",
+    "color": "#85f532",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PEPSI_KHONG_CALO_CHAI_390",
+    "color": "#b9f701",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PEPSI_KHONG_CALO_LON_330/320",
+    "color": "#2f6087",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PEPSI_LON_245",
+    "color": "#a204f7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PEPSI_VI_CHANH_KHONG_CALO_CHAI_1500",
+    "color": "#6ceeec",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PEPSI_VI_CHANH_KHONG_CALO_CHAI_390",
+    "color": "#62df41",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PEPSI_VI_CHANH_KHONG_CALO_LON_330/320",
+    "color": "#b97e19",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PEPSI_CHAI_1500/1750",
+    "color": "#5c0911",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PEPSI_CHAI_330",
+    "color": "#bb5eea",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PEPSI_CHAI_600",
+    "color": "#fa6904",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PEPSI_KHONG_CALO_CHAI_390",
+    "color": "#9bf8fe",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PEPSI_KHONG_CALO_VI_CHANH_CHAI_390",
+    "color": "#1beacb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PEPSI_LON_245",
+    "color": "#74ebac",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PEPSI_VI_CHANH_KHONG_CALO_CHAI_1500",
+    "color": "#55dbed",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PEPSI_LON_TET_330/320",
+    "color": "#a03ce5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SPRITE_CHAI_600",
+    "color": "#fde1c7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SPRITE_CHAI_390",
+    "color": "#513909",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SPRITE_CHAI_600",
+    "color": "#3c6ece",
+    "type": "any",
+    "attributes": []
+  },
+  
+  {
+    "name": "7UP_TET_LON_320/330",
+    "color": "#26d07d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "7UP_CHAI_600",
+    "color": "#181e5d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_7UP_CHAI_330",
+    "color": "#52e1bc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_7UP_CHAI_390",
+    "color": "#b51762",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_7UP_LON_320_SODA_CHANH",
+    "color": "#df363c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_7UP_CHAI_1500/1750",
+    "color": "#ba7bf8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_7UP_CHAI_330",
+    "color": "#9f32c9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_7UP_CHAI_390",
+    "color": "#7322cd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_7UP_LON_320_SODA_CHANH",
+    "color": "#5b0e4f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_7UP_CHAI_1500/1750",
+    "color": "#99b7aa",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_7UP_TET_LON_320/330",
+    "color": "#2a9f04",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_7UP_TET_LON_320/330",
+    "color": "#b13073",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MIRINDA_TET_SARSI_LON_330/320",
+    "color": "#e0578a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MIRINDA_SODA_KEM_LON_TET_330/320",
+    "color": "#c543df",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MIRINDA_CAM_CHAI_390",
+    "color": "#f0d10b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MIRINDA_CAM_LON_330/320",
+    "color": "#1a2205",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MIRINDA_SARSI_CHAI_390",
+    "color": "#da901c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MIRINDA_SARSI_LON_330/320",
+    "color": "#0b135a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MIRINDA_SODA_KEM_CHAI_390",
+    "color": "#c78c0b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MIRINDA_SODA_KEM_LON_330/320",
+    "color": "#718987",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MIRINDA_CAM_CHAI_390",
+    "color": "#5af4cb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MIRINDA_CAM_LON_330/320",
+    "color": "#af2460",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MIRINDA_SARSI_CHAI_390",
+    "color": "#8bd3df",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_RED_BULL_THAI_KEM_ZINC_LON_250",
+    "color": "#c9f5c4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_RED_BULL_THAI_CHAI_150",
+    "color": "#0dc3af",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_RED_BULL_THAI_KEM_ZINC_LON_250",
+    "color": "#841355",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_RED_BULL_THAI_CHAI_150",
+    "color": "#45f2a2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_STING_VANG_LON_330/320",
+    "color": "#2f3dca",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_STING_VANG_CHAI_330",
+    "color": "#5f56bd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_STING_VIET_QUAT_LON_330/320",
+    "color": "#a1f788",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_STING_VIET_QUAT_LON_330/320",
+    "color": "#222fc8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MIRINDA_SARSI_LON_330/320",
+    "color": "#659624",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MIRINDA_SODA_KEM_CHAI_390",
+    "color": "#1cd9bc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MIRINDA_SODA_KEM_LON_TET_330/320",
+    "color": "#a86d79",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MIRINDA_SODA_KEM_LON_TET_330/320",
+    "color": "#f6f5a5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "C2_HONG_TRA_DAO_CHAI_255",
+    "color": "#f58d90",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_C2_HUONG_TAO_CHAI_360",
+    "color": "#e5a1ef",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_C2_HONG_TRA_VAI_CHAI_455",
+    "color": "#e70f08",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_C2_HONG_TRA_DEN_CHAI_455",
+    "color": "#1add60",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_C2_HONG_TRA_DAO_CHAI_255",
+    "color": "#ba73b4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_C2_HUONG_TAO_CHAI_360",
+    "color": "#9b1d52",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_C2_HONG_TRA_VAI_CHAI_455",
+    "color": "#d10f6b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_C2_HONG_TRA_DEN_CHAI_455",
+    "color": "#66e238",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_C2_HONG_TRA_DAO_CHAI_255",
+    "color": "#9e25bd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_C2_HONG_TRA_DAO_CHAI_360",
+    "color": "#1eed9d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "C2_HONG_TRA_DAO_CHAI_360",
+    "color": "#cfb14d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_C2_OI_HONG_CHANH_DAY_CHAI_360",
+    "color": "#ad29a5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "C2_OI_HONG_CHANH_DAY_CHAI_360",
+    "color": "#eb46c4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "C2_CHANH_TUYET_FREEZE_CHAI_360",
+    "color": "#4dee59",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_C2_CHANH_TUYET_FREEZE_CHAI_360",
+    "color": "#5df51b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_C2_CHANH_TUYET_FREEZE_CHAI_360",
+    "color": "#d31648",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "C2_DAU_ANH_DAO_CHAI_360",
+    "color": "#2c7055",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_C2_DAU_ANH_DAO_CHAI_360",
+    "color": "#f6ae5b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_C2_DAU_ANH_DAO_CHAI_360",
+    "color": "#96876e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "C2_DUA_LUOI_BAC_HA_FREEZE_CHAI_360",
+    "color": "#91bdfa",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_C2_DUA_LUOI_BAC_HA_FREEZE_CHAI_360",
+    "color": "#f06e35",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_C2_DUA_LUOI_BAC_HA_FREEZE_CHAI_360",
+    "color": "#fb272a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "C2_HONG_TRA_VAI_CHAI_360",
+    "color": "#6c0698",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_C2_HONG_TRA_VAI_CHAI_360",
+    "color": "#8167d8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_C2_HONG_TRA_VAI_CHAI_360",
+    "color": "#962b01",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "C2_HONG_TRA_DEN_CHAI_360",
+    "color": "#ed273f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_C2_HONG_TRA_DEN_CHAI_360",
+    "color": "#b9b158",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_C2_HONG_TRA_DEN_CHAI_360",
+    "color": "#d19663",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_DR_THANH_KHONG_DUONG_CHAI_330",
+    "color": "#38cfc0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_DR_THANH_KHONG_DUONG_CHAI_330",
+    "color": "#2515af",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TEA_CHANH_CHAI_1L",
+    "color": "#87304f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TEA_CHANH_CHAI_350/320",
+    "color": "#f59398",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TEA_CHANH_CHAI_455/450",
+    "color": "#01b6a4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TEA_NGUYEN_BAN_CHAI_1L",
+    "color": "#62234a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TEA_NGUYEN_BAN_CHAI_350/320",
+    "color": "#3de420",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TEA_NGUYEN_BAN_CHAI_455/450",
+    "color": "#67d794",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TEA_OOLONG_XANH_CHAI_450",
+    "color": "#cc4960",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TEA_KHONG_DUONG_CHAI_455/450",
+    "color": "#c5c98f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TEA_DAO_NHIET_DOI_CHAI_450",
+    "color": "#4cb9e1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TEA_CHANH_CHAI_1L",
+    "color": "#14007a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TEA_CHANH_CHAI_350/320",
+    "color": "#cccd09",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TEA_CHANH_CHAI_455/450",
+    "color": "#47541d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TEA_NGUYEN_BAN_CHAI_1L",
+    "color": "#922b0b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TEA_NGUYEN_BAN_CHAI_350/320",
+    "color": "#867b78",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TEA_NGUYEN_BAN_CHAI_455/450",
+    "color": "#945158",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TEA_OOLONG_XANH_CHAI_450",
+    "color": "#3419d7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TEA_KHONG_DUONG_CHAI_455/450",
+    "color": "#520828",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TEA_DAO_NHIET_DOI_CHAI_450",
+    "color": "#cb0192",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "NUMBER_1_SUA_DAU_NANH_SOYA_CHAI_268",
+    "color": "#381965",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_WARRIOR_THAI_VI_DAU_CHAI_325/320",
+    "color": "#0bd6ea",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_WARRIOR_THAI_VI_NHO_CHAI_325",
+    "color": "#cb0339",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_WARRIOR_THAI_VI_DAU_CHAI_325",
+    "color": "#dbe361",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_WARRIOR_THAI_VI_NHO_CHAI_325",
+    "color": "#d9aa53",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "NUTRIBOOST_HY_LAP_VI_VIET_QUAT_CHAI_170",
+    "color": "#d43ccc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "NUTRIBOOST_HY_LAP_VI_CAM_CHAI_170",
+    "color": "#01f933",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_NUTRIBOOST_HY_LAP_VI_VIET_QUAT_CHAI_170",
+    "color": "#1c466a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_NUTRIBOOST_HY_LAP_VI_CAM_CHAI_170",
+    "color": "#01349d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "NUTRIBOOST_SUA_TRAI_CAY_VI_DAU_CHAI_180",
+    "color": "#709468",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "NUTRIBOOST_SUA_TRAI_CAY_VI_DAU_CHAI_297",
+    "color": "#507680",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "NUTRIBOOST_SUA_TRAI_CAY_VI_DAU_CHAI_1L",
+    "color": "#adc87d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_NUTRIBOOST_SUA_TRAI_CAY_VI_DAU_CHAI_180",
+    "color": "#7ab298",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_NUTRIBOOST_SUA_TRAI_CAY_VI_DAU_CHAI_297",
+    "color": "#241ab1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_NUTRIBOOST_SUA_TRAI_CAY_VI_DAU_CHAI_1L",
+    "color": "#8ea26a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_NUTRIBOOST_SUA_TRAI_CAY_VI_DAU_CHAI_180",
+    "color": "#c4ec0f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_NUTRIBOOST_SUA_TRAI_CAY_VI_DAU_CHAI_297",
+    "color": "#2d53e7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_NUTRIBOOST_SUA_TRAI_CAY_VI_DAU_CHAI_1L",
+    "color": "#982a6e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "NUTRIBOOST_SUA_TRAI_CAY_VI_CAM_CHAI_180",
+    "color": "#ff5dae",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "NUTRIBOOST_SUA_TRAI_CAY_VI_CAM_CHAI_297",
+    "color": "#10dacb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "NUTRIBOOST_SUA_TRAI_CAY_VI_CAM_CHAI_1L",
+    "color": "#9ccfb6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_NUTRIBOOST_SUA_TRAI_CAY_VI_CAM_CHAI_180",
+    "color": "#7ed135",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_NUTRIBOOST_SUA_TRAI_CAY_VI_CAM_CHAI_297",
+    "color": "#b320ff",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_NUTRIBOOST_SUA_TRAI_CAY_VI_CAM_CHAI_1L",
+    "color": "#9eb2d2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_NUTRIBOOST_SUA_TRAI_CAY_VI_CAM_CHAI_180",
+    "color": "#21787c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_NUTRIBOOST_SUA_TRAI_CAY_VI_CAM_CHAI_297",
+    "color": "#c882d5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_NUTRIBOOST_SUA_TRAI_CAY_VI_CAM_CHAI_1L",
+    "color": "#f16b1c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "NUTRIBOOST_SUA_TRAI_CAY_BANH_QUY_KEM_297",
+    "color": "#64ad58",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_NUTRIBOOST_SUA_TRAI_CAY_BANH_QUY_KEM_297",
+    "color": "#5d7849",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_NUTRIBOOST_SUA_TRAI_CAY_BANH_QUY_KEM_297",
+    "color": "#ce90ec",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SAN_MIGUEL_PALE_PILSEN_LON_330/500",
+    "color": "#3c561e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SAN_MIGUEL_PALE_PILSEN_LON_330/500",
+    "color": "#b1f52e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SAN_MIGUEL_RED_HORSE_LON_500",
+    "color": "#7179b0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SAN_MIGUEL_RED_HORSE_LON_500",
+    "color": "#10239e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "STING_DO_CHAI_500",
+    "color": "#2859d6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_STING_DO_CHAI_500",
+    "color": "#389bb8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_STING_DO_CHAI_500",
+    "color": "#259f27",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "FUZETEA_CHANH_SA_LON_320",
+    "color": "#eb97df",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "OLD_FUZETEA_CHANH_SA_CHAI_350/355",
+    "color": "#440d42",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "OLD_FUZETEA_CHANH_SA_CHAI_450",
+    "color": "#d135b2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "OLD_FUZETEA_CHANH_SA_CHAI_1L",
+    "color": "#c67c54",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_FUZETEA_CHANH_SA_LON_320",
+    "color": "#39361a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_OLD_FUZETEA_CHANH_SA_CHAI_350/355",
+    "color": "#a512c9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_OLD_FUZETEA_CHANH_SA_CHAI_450",
+    "color": "#e6585e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_OLD_FUZETEA_CHANH_SA_CHAI_1L",
+    "color": "#c9da65",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_FUZETEA_CHANH_SA_LON_320",
+    "color": "#f64a2e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_OLD_FUZETEA_CHANH_SA_CHAI_350/355",
+    "color": "#c9470e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_OLD_FUZETEA_CHANH_SA_CHAI_450",
+    "color": "#7b225d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_OLD_FUZETEA_CHANH_SA_CHAI_1L",
+    "color": "#2026d2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "FUZETEA_BI_DAO_LON_320",
+    "color": "#226b3d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "FUZETEA_BI_DAO_CHAI_1L",
+    "color": "#755c09",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_FUZETEA_BI_DAO_LON_320",
+    "color": "#8db345",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_FUZETEA_BI_DAO_CHAI_1L",
+    "color": "#91d2b2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_FUZETEA_BI_DAO_LON_320",
+    "color": "#a0c694",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_FUZETEA_BI_DAO_CHAI_1L",
+    "color": "#cca38e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "OLD_FUZETEA_CHANH_DAY_CHAI_350/355",
+    "color": "#62054f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "OLD_FUZETEA_CHANH_DAY_CHAI_450",
+    "color": "#2b09ca",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "OLD_FUZETEA_DAO_HAT_CHIA_CHAI_350/355",
+    "color": "#84498b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "OLD_FUZETEA_DAO_HAT_CHIA_CHAI_450",
+    "color": "#8dbead",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "OLD_FUZETEA_DAO_HAT_CHIA_CHAI_1L",
+    "color": "#637dba",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_OLD_FUZETEA_DAO_HAT_CHIA_CHAI_350/355",
+    "color": "#cdd2ee",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_OLD_FUZETEA_DAO_HAT_CHIA_CHAI_450",
+    "color": "#a62316",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_OLD_FUZETEA_DAO_HAT_CHIA_CHAI_1L",
+    "color": "#719bbf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_OLD_FUZETEA_DAO_HAT_CHIA_CHAI_350/355",
+    "color": "#698094",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_OLD_FUZETEA_DAO_HAT_CHIA_CHAI_450",
+    "color": "#739242",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_OLD_FUZETEA_DAO_HAT_CHIA_CHAI_1L",
+    "color": "#be0fad",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "OLD_FUZETEA_TAO_FUJI_NHA_DAM_CHAI_350",
+    "color": "#7e0ce1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_OLD_FUZETEA_TAO_FUJI_NHA_DAM_CHAI_350",
+    "color": "#f97ab2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_OLD_FUZETEA_TAO_FUJI_NHA_DAM_CHAI_350",
+    "color": "#3da96f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "FUZETEA_CHANH_SA_CHAI_450",
+    "color": "#7ad683",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "FUZETEA_CHANH_SA_CHAI_350/355",
+    "color": "#e96c73",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "FUZETEA_CHANH_SA_CHAI_1L",
+    "color": "#407bfe",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_FUZETEA_CHANH_SA_CHAI_350/355",
+    "color": "#26f598",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_FUZETEA_CHANH_SA_CHAI_450",
+    "color": "#0fb86c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_FUZETEA_CHANH_SA_CHAI_1L",
+    "color": "#edc4cc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_FUZETEA_CHANH_SA_CHAI_350/355",
+    "color": "#0e1c2b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_FUZETEA_CHANH_SA_CHAI_450",
+    "color": "#f075b5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_FUZETEA_CHANH_SA_CHAI_1L",
+    "color": "#36b72b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "FUZETEA_CHANH_DAY_CHAI_350/355",
+    "color": "#091473",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "FUZETEA_CHANH_DAY_CHAI_450",
+    "color": "#9c8814",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "FUZETEA_DAO_HAT_CHIA_CHAI_350/355",
+    "color": "#e2b92f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "FUZETEA_DAO_HAT_CHIA_CHAI_450",
+    "color": "#40d1d6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "FUZETEA_DAO_HAT_CHIA_CHAI_1L",
+    "color": "#5f9ba1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_FUZETEA_DAO_HAT_CHIA_CHAI_350/355",
+    "color": "#6df90e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_FUZETEA_DAO_HAT_CHIA_CHAI_450",
+    "color": "#99495f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_FUZETEA_DAO_HAT_CHIA_CHAI_1L",
+    "color": "#842eb7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_FUZETEA_DAO_HAT_CHIA_CHAI_350/355",
+    "color": "#2c055f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_FUZETEA_DAO_HAT_CHIA_CHAI_450",
+    "color": "#5714e5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_FUZETEA_DAO_HAT_CHIA_CHAI_1L",
+    "color": "#a06a1b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "FUZETEA_TAO_FUJI_NHA_DAM_CHAI_350",
+    "color": "#8d87ab",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_FUZETEA_TAO_FUJI_NHA_DAM_CHAI_350",
+    "color": "#d67e85",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_FUZETEA_TAO_FUJI_NHA_DAM_CHAI_350",
+    "color": "#60ccd3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MINUTE_MAID_SPLASH_LON_320",
+    "color": "#0a8b58",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MINUTE_MAID_SPLASH_CHAI_240",
+    "color": "#dfd658",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MINUTE_MAID_SPLASH_LON_320",
+    "color": "#25d037",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MINUTE_MAID_SPLASH_LON_320",
+    "color": "#f26a8e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MINUTE_MAID_SPLASH_CHAI_240",
+    "color": "#d18b65",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MINUTE_MAID_SPLASH_CHAI_240",
+    "color": "#1d85b4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MINUTE_MAID_TEPPY_CHAI_327/330",
+    "color": "#113890",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MINUTE_MAID_TEPPY_CHAI_1L",
+    "color": "#611819",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MINUTE_MAID_TEPPY_CHAI_327/330",
+    "color": "#80ee41",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MINUTE_MAID_TEPPY_CHAI_1L",
+    "color": "#9f33bb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MINUTE_MAID_TEPPY_CHAI_327/330",
+    "color": "#6c231a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MINUTE_MAID_TEPPY_CHAI_1L",
+    "color": "#537924",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "DASANI_NUOC_TINH_KHIET_CHAI_350/500",
+    "color": "#5ca68e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "DASANI_NUOC_TINH_KHIET_CHAI_1.5L",
+    "color": "#1cc566",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_DASANI_NUOC_TINH_KHIET_CHAI_350/500",
+    "color": "#0085ac",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_DASANI_NUOC_TINH_KHIET_CHAI_1.5L",
+    "color": "#c2041c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_DASANI_NUOC_TINH_KHIET_CHAI_350/500",
+    "color": "#b08eaf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_DASANI_NUOC_TINH_KHIET_CHAI_1.5L",
+    "color": "#d761f8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "DASANI_BO_SUNG_KHOANG_CHAI_510",
+    "color": "#26b69b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_DASANI_BO_SUNG_KHOANG_CHAI_510",
+    "color": "#866ddf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_DASANI_BO_SUNG_KHOANG_CHAI_510",
+    "color": "#b9f504",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "AQUARIUS_CHAI_390",
+    "color": "#9284be",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "AQUARIUS_ZERO_CHAI_390",
+    "color": "#0b7fa7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_AQUARIUS_CHAI_390",
+    "color": "#483b3c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_AQUARIUS_ZERO_CHAI_390",
+    "color": "#1ab89c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_AQUARIUS_CHAI_390",
+    "color": "#d57c15",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_AQUARIUS_ZERO_CHAI_390",
+    "color": "#f31e4d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COFFEE_MAX_GEORGIA_CHAI_180",
+    "color": "#e04d29",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COFFEE_MAX_GEORGIA_LON_235/250",
+    "color": "#00b469",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COFFEE_MAX_GEORGIA_CHAI_500",
+    "color": "#f52799",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COFFEE_MAX_GEORGIA_CHAI_180",
+    "color": "#9ea2bf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COFFEE_MAX_GEORGIA_LON_235/250",
+    "color": "#e675dc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COFFEE_MAX_GEORGIA_CHAI_180",
+    "color": "#38e8af",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COFFEE_MAX_GEORGIA_LON_235/250",
+    "color": "#7b9cae",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "THUMS_UP_DAU_CHAI_330",
+    "color": "#1a3ee4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "THUMS_UP_DAU_LON_320/330",
+    "color": "#ce2a17",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "THUMS_UP_KIWI_CHAI_330",
+    "color": "#daa331",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "THUMS_UP_KIWI_LON_320/330",
+    "color": "#3efffa",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_THUMS_UP_DAU_CHAI_330",
+    "color": "#829517",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_THUMS_UP_DAU_LON_320/330",
+    "color": "#c1a1de",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_THUMS_UP_KIWI_CHAI_330",
+    "color": "#d0c236",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_THUMS_UP_KIWI_LON_320/330",
+    "color": "#db3ec0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_THUMS_UP_DAU_CHAI_330",
+    "color": "#45bf03",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_THUMS_UP_DAU_LON_320/330",
+    "color": "#387e8c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_THUMS_UP_KIWI_CHAI_330",
+    "color": "#3044b5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_THUMS_UP_KIWI_LON_320/330",
+    "color": "#4aceef",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_REVIVE_KHONG_CALO_CHAI",
+    "color": "#660d94",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_REVIVE_CHAI",
+    "color": "#a399fa",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_REVIVE_KHONG_CALO_CHAI",
+    "color": "#26b31f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_REVIVE_CHAI",
+    "color": "#60f5b3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_REVIVE_CHANH_MUOI",
+    "color": "#914e46",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SCHWEPPES_TONIC_WATER_LON_330",
+    "color": "#80b0d7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SCHWEPPES_TONIC_WATER_CHAI_1L/1.25L",
+    "color": "#45cdd9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SCHWEPPES_GUNG_ALE_LON_320/330",
+    "color": "#120dcc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "SCHWEPPES_SODA_WATER_LON_320/330",
+    "color": "#21f2f8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SCHWEPPES_TONIC_WATER_LON_330",
+    "color": "#af3831",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SCHWEPPES_TONIC_WATER_CHAI_1L/1.25L",
+    "color": "#4ef38e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SCHWEPPES_GUNG_ALE_LON_320/330",
+    "color": "#dccc6c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SCHWEPPES_SODA_WATER_LON_320/330",
+    "color": "#174c50",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SCHWEPPES_TONIC_WATER_LON_330",
+    "color": "#d5e606",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SCHWEPPES_TONIC_WATER_CHAI_1L/1.25L",
+    "color": "#8fe7b2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SCHWEPPES_GUNG_ALE_LON_320/330",
+    "color": "#d60e73",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SCHWEPPES_SODA_WATER_LON_320/330",
+    "color": "#5f3ce4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TEA_365_TRA_DAO_CHAI_500",
+    "color": "#34e71d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TEA_365_TRA_MAT_ONG_CHAI_500",
+    "color": "#36aaa5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TEA_365_TRA_CHANH_SA_CHAI_500",
+    "color": "#ba8c29",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TEA_365_TRA_MANG_CAU_CHAI_500",
+    "color": "#f8e902",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TEA_365_TRA_DAO_CHAI_500",
+    "color": "#79f2e4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TEA_365_TRA_MAT_ONG_CHAI_500",
+    "color": "#570fc4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TEA_365_TRA_CHANH_SA_CHAI_500",
+    "color": "#7a5f45",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TEA_365_TRA_MANG_CAU_CHAI_500",
+    "color": "#0fc39f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TEA_365_TRA_DAO_CHAI_500",
+    "color": "#36530e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TEA_365_TRA_MAT_ONG_CHAI_500",
+    "color": "#4c423b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TEA_365_TRA_CHANH_SA_CHAI_500",
+    "color": "#7ea581",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TEA_365_TRA_MANG_CAU_CHAI_500",
+    "color": "#3521c7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COMPACT_CHERRY_CHAI_330",
+    "color": "#0cea55",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COMPACT_KIWI_VANG_CHAI_330",
+    "color": "#014a33",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COMPACT_CHERRY_CHAI_330",
+    "color": "#aa4f61",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COMPACT_KIWI_VANG_CHAI_330",
+    "color": "#49f9f5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COMPACT_CHERRY_CHAI_330",
+    "color": "#a3dd9c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COMPACT_KIWI_VANG_CHAI_330",
+    "color": "#0812f9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "WAKEUP_247_CHAI_330",
+    "color": "#f85bec",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_WAKEUP_247_CHAI_330",
+    "color": "#a26cce",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_WAKEUP_247_CHAI_330",
+    "color": "#3dd2f8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "POCARI_SWEAT_CHAI_350/500",
+    "color": "#94cbe7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "POCARI_SWEAT_CHAI_900",
+    "color": "#a6fdbf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "POCARI_SWEAT_LON_330",
+    "color": "#6eb811",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_POCARI_SWEAT_CHAI_350/500",
+    "color": "#d603b9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_POCARI_SWEAT_CHAI_900",
+    "color": "#45fd5c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_POCARI_SWEAT_LON_330",
+    "color": "#77d6a8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_POCARI_SWEAT_CHAI_350/500",
+    "color": "#5ed675",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_POCARI_SWEAT_CHAI_900",
+    "color": "#cc598d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_POCARI_SWEAT_LON_330",
+    "color": "#fb709b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_BUDWEISER_BUDVAR_DARK_4_7_CHAI_330",
+    "color": "#22dda0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_BUDWEISER_BUDVAR_DARK_4_7_CHAI_330",
+    "color": "#f58658",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MONSTER_TRUYEN_THONG_LON_355",
+    "color": "#4a9092",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MONSTER_ZERO_SUGAR_ULTRA_WHITE_LON_355",
+    "color": "#a02711",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MONSTER_ZERO_SUGAR_ULTRA_RED_LON_355",
+    "color": "#c9c1b4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MONSTER_ZERO_SUGAR_ULTRA_BLUE_LON_355",
+    "color": "#c0f043",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MONSTER_ZERO_SUGAR_TAO_KIWI_LON_355",
+    "color": "#6453ae",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MONSTER_JUICE_XOAI_LON_355",
+    "color": "#6a1fc2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MONSTER_JUICE_PIPELINE_PUNCH_HONG_LON_355",
+    "color": "#22e899",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MONSTER_TRUYEN_THONG_LON_355",
+    "color": "#eba9f5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MONSTER_ZERO_SUGAR_ULTRA_WHITE_LON_355",
+    "color": "#2ee7a1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MONSTER_ZERO_SUGAR_ULTRA_RED_LON_355",
+    "color": "#cbfd6f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MONSTER_ZERO_SUGAR_ULTRA_BLUE_LON_355",
+    "color": "#6d017b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MONSTER_ZERO_SUGAR_TAO_KIWI_LON_355",
+    "color": "#e6d8bc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MONSTER_JUICE_XOAI_LON_355",
+    "color": "#9d4e2c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MONSTER_JUICE_PIPELINE_PUNCH_HONG_LON_355",
+    "color": "#e01212",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MONSTER_TRUYEN_THONG_LON_355",
+    "color": "#5ca022",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MONSTER_ZERO_SUGAR_ULTRA_WHITE_LON_355",
+    "color": "#660755",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MONSTER_ZERO_SUGAR_ULTRA_RED_LON_355",
+    "color": "#ec4f42",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MONSTER_ZERO_SUGAR_ULTRA_BLUE_LON_355",
+    "color": "#a15663",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MONSTER_ZERO_SUGAR_TAO_KIWI_LON_355",
+    "color": "#d4b324",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MONSTER_JUICE_XOAI_LON_355",
+    "color": "#a2f529",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MONSTER_JUICE_PIPELINE_PUNCH_HONG_LON_355",
+    "color": "#b5f451",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "LAC_VIET_LON_330",
+    "color": "#fa9f6e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "LAC_VIET_CHAI_355",
+    "color": "#0d44c4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "OLD_LAC_VIET_LON_330",
+    "color": "#cd2c91",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "OLD_LAC_VIET_CHAI_355",
+    "color": "#b8eebc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_LAC_VIET_LON_330",
+    "color": "#27425f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_LAC_VIET_CHAI_355",
+    "color": "#ccfe12",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_LAC_VIET_LON_330",
+    "color": "#40c44b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_LAC_VIET_CHAI_355",
+    "color": "#ec80e6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_OLD_LAC_VIET_LON_330",
+    "color": "#35011b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_OLD_LAC_VIET_CHAI_355",
+    "color": "#1140d8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_OLD_LAC_VIET_LON_330",
+    "color": "#8e3ed4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_OLD_LAC_VIET_CHAI_355",
+    "color": "#2f160a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_NUOC_DUA_NGUYEN_CHAT_HOP_330",
+    "color": "#6b212b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_NUOC_DUA_DUA_NON_HOP_330",
+    "color": "#e11a0b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_NUOC_DUA_XIEM_THOM_HOP_330",
+    "color": "#5c9d14",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_NUOC_DUA_XIEM_XANH_HOP_330",
+    "color": "#b7e2ae",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_NUOC_DUA_XIEM_TAC_HOP_330",
+    "color": "#5fd42a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_NUOC_DUA_XIEM_SEN_HOP_330",
+    "color": "#eba0ba",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COCOXIM_NUOC_DUA_NGUYEN_CHAT_HOP_330",
+    "color": "#bc47bf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COCOXIM_NUOC_DUA_DUA_NON_HOP_330",
+    "color": "#5a58ee",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COCOXIM_NUOC_DUA_XIEM_THOM_HOP_330",
+    "color": "#2d4857",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COCOXIM_NUOC_DUA_XIEM_XANH_HOP_330",
+    "color": "#c44fff",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COCOXIM_NUOC_DUA_XIEM_TAC_HOP_330",
+    "color": "#8d26ae",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COCOXIM_NUOC_DUA_XIEM_SEN_HOP_330",
+    "color": "#676f41",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COCOXIM_NUOC_DUA_NGUYEN_CHAT_HOP_330",
+    "color": "#b87de7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COCOXIM_NUOC_DUA_DUA_NON_HOP_330",
+    "color": "#c5ea27",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COCOXIM_NUOC_DUA_XIEM_THOM_HOP_330",
+    "color": "#e7de29",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COCOXIM_NUOC_DUA_XIEM_XANH_HOP_330",
+    "color": "#554c96",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COCOXIM_NUOC_DUA_XIEM_TAC_HOP_330",
+    "color": "#c8e02a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COCOXIM_NUOC_DUA_XIEM_SEN_HOP_330",
+    "color": "#6a9736",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_NUOC_COT_DUA_TUOI_LON_400",
+    "color": "#0efabc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_NUOC_COT_DUA_TUOI_CHEFS_CHOICE_LON_400",
+    "color": "#10b831",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_NUOC_COT_DUA_TUOI_CHEFS_CHOICE_HOP_200",
+    "color": "#e9f8fa",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_NUOC_COT_DUA_TUOI_HOP_200",
+    "color": "#ca6b07",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_SUA_DUA_HANH_NHAN_HOP_330",
+    "color": "#3cfc44",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_SUA_DUA_MATCHA_NHAT_HOP_330",
+    "color": "#98c0cc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_SUA_DUA_NGUYEN_CHAT_HOP_330",
+    "color": "#c6a3d4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_SUA_DUA_ORGANIC_HOP_330",
+    "color": "#eceecd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_SUA_DUA_CA_PHE_HOP_330",
+    "color": "#0cb074",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_SUA_DUA_SOCOLA_DEN_HOP_330",
+    "color": "#d1be80",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COCOXIM_SUA_DUA_HANH_NHAN_HOP_330",
+    "color": "#298f9c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COCOXIM_SUA_DUA_MATCHA_NHAT_HOP_330",
+    "color": "#e99ef5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COCOXIM_SUA_DUA_NGUYEN_CHAT_HOP_330",
+    "color": "#db7262",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COCOXIM_SUA_DUA_ORGANIC_HOP_330",
+    "color": "#51e4ba",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COCOXIM_SUA_DUA_CA_PHE_HOP_330",
+    "color": "#3ae01d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_COCOXIM_SUA_DUA_SOCOLA_DEN_HOP_330",
+    "color": "#4c1ce9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COCOXIM_SUA_DUA_HANH_NHAN_HOP_330",
+    "color": "#1200c4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COCOXIM_SUA_DUA_MATCHA_NHAT_HOP_330",
+    "color": "#d8627f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COCOXIM_SUA_DUA_NGUYEN_CHAT_HOP_330",
+    "color": "#1d1ae5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COCOXIM_SUA_DUA_ORGANIC_HOP_330",
+    "color": "#6fa7d3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COCOXIM_SUA_DUA_CA_PHE_HOP_330",
+    "color": "#1ffac1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_COCOXIM_SUA_DUA_SOCOLA_DEN_HOP_330",
+    "color": "#6c2e46",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_SUA_DUA_BARISTA_HOP_1L",
+    "color": "#03f502",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "KUANG_CHUAN_TRA_MAT_ONG_HOA_LAI_CHAI_585",
+    "color": "#501fb9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "KUANG_CHUAN_HONG_TRA_VI_TAO_CHAI_585",
+    "color": "#716e35",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MUAYTHAI_LON_250",
+    "color": "#d8126d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MUAYTHAI_LON_250",
+    "color": "#844e34",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MUAYTHAI_LON_250",
+    "color": "#569696",
+    "type": "any",
+    "attributes": []
+  },
+ 
+  {
+    "name": "LIPOVITAN_MAT_ONG_LON_250",
+    "color": "#4d52a8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "LIPOVITAN_MAT_NHAN_LON_TRANG_250",
+    "color": "#fd72f6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "LIPOVITAN_MAT_NHAN_LON_DO_250",
+    "color": "#fe75bf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_LIPOVITAN_MAT_ONG_LON_250",
+    "color": "#6925d2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_LIPOVITAN_MAT_NHAN_LON_TRANG_250",
+    "color": "#005501",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_LIPOVITAN_MAT_NHAN_LON_DO_250",
+    "color": "#56fe6b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_LIPOVITAN_MAT_ONG_LON_250",
+    "color": "#ad967b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_LIPOVITAN_MAT_NHAN_LON_TRANG_250",
+    "color": "#473016",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_LIPOVITAN_MAT_NHAN_LON_DO_250",
+    "color": "#b30f1f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_RED_BULL_THAI_XANH_LON_350",
+    "color": "#1c3860",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_RED_BULL_THAI_XANH_LON_350",
+    "color": "#d6cdd0",
+    "type": "any",
+    "attributes": []
+  },
+
+  {
+    "name": "PACK_2_7UP_CHAI_600",
+    "color": "#014ecf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_7UP_CHAI_600",
+    "color": "#6ba56d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "RONG_DO_DAU_LY_240",
+    "color": "#d43b24",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_4_RONG_DO_DAU_LY_240",
+    "color": "#f56c2a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "RONG_DO_DAU_CHAI_330",
+    "color": "#77ebc7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "RONG_DO_NHO_CHAI_330",
+    "color": "#bd6294",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "RONG_DO_CA_PHE_CHAI_330",
+    "color": "#c0fec2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "RONG_DO_XA_XI_CHAI_330",
+    "color": "#62f025",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "RONG_DO_DUA_DUA_CHAI_330",
+    "color": "#b1613e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "RONG_DO_DAO_YUZU_CHAI_330",
+    "color": "#aa5dbd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_RONG_DO_DAU_CHAI_330",
+    "color": "#77547b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_RONG_DO_NHO_CHAI_330",
+    "color": "#32daad",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_RONG_DO_CA_PHE_CHAI_330",
+    "color": "#eab228",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_RONG_DO_XA_XI_CHAI_330",
+    "color": "#babea3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_RONG_DO_DUA_DUA_CHAI_330",
+    "color": "#554a43",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_RONG_DO_DAO_YUZU_CHAI_330",
+    "color": "#6f218a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_RONG_DO_DAU_CHAI_330",
+    "color": "#eb31c0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_RONG_DO_NHO_CHAI_330",
+    "color": "#014ac0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_RONG_DO_CA_PHE_CHAI_330",
+    "color": "#4546a6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_RONG_DO_XA_XI_CHAI_330",
+    "color": "#b52eb1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_RONG_DO_DUA_DUA_CHAI_330",
+    "color": "#44b4ee",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_RONG_DO_DAO_YUZU_CHAI_330",
+    "color": "#ac846a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_LAGER_LON_330",
+    "color": "#5a89ac",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_LAGER_LON_500",
+    "color": "#9e1773",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_LAGER_CHAI_330",
+    "color": "#ead48b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_LAGER_CHAI_640",
+    "color": "#35c080",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_LAGER_CHAI_500/600",
+    "color": "#85fcfd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_PURE_DRAFT_LON_330",
+    "color": "#2bf82e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_PURE_DRAFT_CHAI_330",
+    "color": "#69d4d0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_1903_LON_500",
+    "color": "#5faf3e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_1903_LON_330",
+    "color": "#a0c8a0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_1903_CHAI_330",
+    "color": "#440ddb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_0.0_DO_LON_330",
+    "color": "#4f1e9c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_0.0_DO_CHAI_330",
+    "color": "#98271f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_SODA_RONG_BIEN_LON_320",
+    "color": "#72ee33",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_HOANG_DAO_XANH_CHAI_473",
+    "color": "#e37389",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_HOANG_DAO_DO_CHAI_473",
+    "color": "#ff67c8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TSINGTAO_LAGER_LON_330",
+    "color": "#b8b6b6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TSINGTAO_LAGER_CHAI_330",
+    "color": "#e23324",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TSINGTAO_LAGER_LON_330",
+    "color": "#68ea4a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TSINGTAO_LAGER_CHAI_330",
+    "color": "#9071db",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHILL_COCKTAIL_VAI_CHAI_275",
+    "color": "#6f8beb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHILL_COCKTAIL_VIET_QUAT_CHAI_275",
+    "color": "#cbfae6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHILL_COCKTAIL_DAO_CHAI_275",
+    "color": "#12619b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHILL_COCKTAIL_LIGHT_VAI_LON_330",
+    "color": "#e33f95",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHILL_COCKTAIL_LIGHT_VIET_QUAT_LON_330",
+    "color": "#33b49f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHILL_COCKTAIL_LIGHT_DAU_LON_330",
+    "color": "#c8a30f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHILL_COCKTAIL_LIGHT_DAO_LON_330",
+    "color": "#77278d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHILL_COCKTAIL_LIGHT_CAM_LON_330",
+    "color": "#6d576c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHILL_COCKTAIL_LIGHT_NHO_LON_330",
+    "color": "#b96b59",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHILL_COCKTAIL_SAKURA_VAI_SAKE_LON_250",
+    "color": "#6b6e10",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHILL_COCKTAIL_SAKURA_CAM_YUZU_SAKE_LON_250",
+    "color": "#0039df",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHILL_COCKTAIL_SAKURA_DUA_HAU_SAKE_LON_250",
+    "color": "#f3edab",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHILL_COCKTAIL_VAI_CHAI_275",
+    "color": "#e7bb7f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHILL_COCKTAIL_VIET_QUAT_CHAI_275",
+    "color": "#013f6e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHILL_COCKTAIL_DAO_CHAI_275",
+    "color": "#d457ff",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHILL_COCKTAIL_LIGHT_VAI_LON_330",
+    "color": "#aba497",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHILL_COCKTAIL_LIGHT_VIET_QUAT_LON_330",
+    "color": "#c494b4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHILL_COCKTAIL_LIGHT_DAU_LON_330",
+    "color": "#72a8dc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHILL_COCKTAIL_LIGHT_DAO_LON_330",
+    "color": "#c8272e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHILL_COCKTAIL_LIGHT_CAM_LON_330",
+    "color": "#647d4f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHILL_COCKTAIL_LIGHT_NHO_LON_330",
+    "color": "#99e70e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHILL_COCKTAIL_SAKURA_VAI_SAKE_LON_250",
+    "color": "#2c62b3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHILL_COCKTAIL_SAKURA_CAM_YUZU_SAKE_LON_250",
+    "color": "#501076",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHILL_COCKTAIL_SAKURA_DUA_HAU_SAKE_LON_250",
+    "color": "#22fe61",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHILL_COCKTAIL_VAI_CHAI_275",
+    "color": "#f9e80d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHILL_COCKTAIL_VIET_QUAT_CHAI_275",
+    "color": "#c17476",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHILL_COCKTAIL_DAO_CHAI_275",
+    "color": "#fb0211",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHILL_COCKTAIL_LIGHT_VAI_LON_330",
+    "color": "#1b44a5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHILL_COCKTAIL_LIGHT_VIET_QUAT_LON_330",
+    "color": "#f3104d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHILL_COCKTAIL_LIGHT_DAU_LON_330",
+    "color": "#e2f878",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHILL_COCKTAIL_LIGHT_DAO_LON_330",
+    "color": "#a4f586",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHILL_COCKTAIL_LIGHT_CAM_LON_330",
+    "color": "#ae7e60",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHILL_COCKTAIL_LIGHT_NHO_LON_330",
+    "color": "#1e8c7e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHILL_COCKTAIL_SAKURA_VAI_SAKE_LON_250",
+    "color": "#ec1070",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHILL_COCKTAIL_SAKURA_CAM_YUZU_SAKE_LON_250",
+    "color": "#813589",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHILL_COCKTAIL_SAKURA_DUA_HAU_SAKE_LON_250",
+    "color": "#c7460c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PORORO_DAU_CHAI_235",
+    "color": "#baa5b1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PORORO_CHUOI_CHAI_235",
+    "color": "#4f0713",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PORORO_VIET_QUAT_CHAI_235",
+    "color": "#5bbae1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PORORO_TRAI_CAY_NHIET_DOI_CHAI_235",
+    "color": "#89f8f5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PORORO_TAO_CHAI_235",
+    "color": "#4f0cd9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PORORO_SUA_CHAI_235",
+    "color": "#4465bc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PORORO_DAU_CHAI_235",
+    "color": "#29c699",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PORORO_CHUOI_CHAI_235",
+    "color": "#4d6f59",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PORORO_VIET_QUAT_CHAI_235",
+    "color": "#102927",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PORORO_TRAI_CAY_NHIET_DOI_CHAI_235",
+    "color": "#34bc92",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PORORO_TAO_CHAI_235",
+    "color": "#b02ccb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_PORORO_SUA_CHAI_235",
+    "color": "#4cd5c1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PORORO_DAU_CHAI_235",
+    "color": "#c83f26",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PORORO_CHUOI_CHAI_235",
+    "color": "#0c95d4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PORORO_VIET_QUAT_CHAI_235",
+    "color": "#1f0164",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PORORO_TRAI_CAY_NHIET_DOI_CHAI_235",
+    "color": "#fbb956",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PORORO_TAO_CHAI_235",
+    "color": "#213995",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PORORO_SUA_CHAI_235",
+    "color": "#06f2da",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MR_BROWN_TRA_SUA_CHAI_580",
+    "color": "#f8a4a0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MR_BROWN_TRA_SUA_DONG_LON_320",
+    "color": "#298e9b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MR_BROWN_TRA_SUA_DUONG_DEN_LON_320",
+    "color": "#573658",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MR_BROWN_CA_PHE_SUA_DA_LON_240",
+    "color": "#94c1bf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MR_BROWN_CA_PHE_SUA_VI_SOCOLA_LON_240",
+    "color": "#c883cf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MR_BROWN_CA_PHE_SUA_CAPPUCCINO_LON_240",
+    "color": "#527563",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MR_BROWN_CA_PHE_SUA_BLUE_MOUNTAIN_LON_240",
+    "color": "#5a82c6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MR_BROWN_CA_PHE_SUA_HUONG_VANILLA_LON_240",
+    "color": "#e6d080",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ICE+_DAO_CHAI_490/500",
+    "color": "#44616c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ICE+_SO_RI_CHAI_490/500",
+    "color": "#17c57b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ICE+_NHO_XANH_CHAI_490/500",
+    "color": "#43d9f8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ICE+_CAM_CHANH_CHAI_490/500",
+    "color": "#4696ee",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ICE+_DUA_LUOI_CHAI_490/500",
+    "color": "#dd91ec",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_ICE+_DAO_CHAI_490/500",
+    "color": "#609292",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_ICE+_SO_RI_CHAI_490/500",
+    "color": "#70f383",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_ICE+_NHO_XANH_CHAI_490/500",
+    "color": "#5f61be",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_ICE+_CAM_CHANH_CHAI_490/500",
+    "color": "#bda4ff",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_ICE+_DUA_LUOI_CHAI_490/500",
+    "color": "#531cd6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_ICE+_DAO_CHAI_490/500",
+    "color": "#822689",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_ICE+_SO_RI_CHAI_490/500",
+    "color": "#9c5cbd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_ICE+_NHO_XANH_CHAI_490/500",
+    "color": "#9215dd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_ICE+_CAM_CHANH_CHAI_490/500",
+    "color": "#6b831d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_ICE+_DUA_LUOI_CHAI_490/500",
+    "color": "#ac0466",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "LUSH_NGUYEN_BAN_LON_330",
+    "color": "#e48f49",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "LUSH_DAO_MO_LON_330",
+    "color": "#182fb7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "LUSH_BUOI_HONG_LON_330",
+    "color": "#528657",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "LUSH_KHOM_LON_330",
+    "color": "#c1efc2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_LUSH_NGUYEN_BAN_LON_330",
+    "color": "#d3c55f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_LUSH_DAO_MO_LON_330",
+    "color": "#3a6566",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_LUSH_BUOI_HONG_LON_330",
+    "color": "#d7e6f2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_LUSH_KHOM_LON_330",
+    "color": "#fb1a04",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_LUSH_NGUYEN_BAN_LON_330",
+    "color": "#483a3e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_LUSH_DAO_MO_LON_330",
+    "color": "#71492e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_LUSH_BUOI_HONG_LON_330",
+    "color": "#a21046",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_LUSH_KHOM_LON_330",
+    "color": "#fe3f4c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HIGHLANDS_CA_PHE_SUA_LON_185/235",
+    "color": "#1ae61d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HIGHLANDS_CA_PHE_SUA_HOP_180",
+    "color": "#4fcca4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HIGHLANDS_CA_PHE_SUA_LON_185/235",
+    "color": "#13aed6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HIGHLANDS_CA_PHE_SUA_HOP_180",
+    "color": "#ce7656",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_HIGHLANDS_CA_PHE_SUA_LON_185/235",
+    "color": "#132331",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_HIGHLANDS_CA_PHE_SUA_HOP_180",
+    "color": "#68c7d5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CARABAO_LON_250",
+    "color": "#b71228",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CARABAO_LON_250",
+    "color": "#2c39d7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CARABAO_LON_250",
+    "color": "#435599",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "KOMBUCHA_CAM_YUZU_LON_250",
+    "color": "#3bd909",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "KOMBUCHA_CAM_DAO_LON_250",
+    "color": "#824a6b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "KOMBUCHA_LUU_DO_LON_250",
+    "color": "#ec3ec8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "KOMBUCHA_XOAI_KIWI_LON_250",
+    "color": "#0e1e36",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "KOMBUCHA_DAU_TAY_LON_250",
+    "color": "#bd7307",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "KOMBUCHA_OI_HONG_LON_250",
+    "color": "#596b27",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "KOMBUCHA_CHANH_DAY_LON_250",
+    "color": "#8ad8ec",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "KOMBUCHA_NGUYEN_BAN_LON_250",
+    "color": "#62e309",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "KOMBUCHA_VAI_KIWI_LON_250",
+    "color": "#7cf927",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "KOMBUCHA_ATISO_DO_LON_250",
+    "color": "#e83197",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "KOMBUCHA_MO_LON_250",
+    "color": "#57d40e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_KOMBUCHA_CAM_YUZU_LON_250",
+    "color": "#7ead28",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_KOMBUCHA_CAM_DAO_LON_250",
+    "color": "#bc8507",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_KOMBUCHA_LUU_DO_LON_250",
+    "color": "#ba159a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_KOMBUCHA_XOAI_KIWI_LON_250",
+    "color": "#6edcc0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_KOMBUCHA_DAU_TAY_LON_250",
+    "color": "#a1f385",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_KOMBUCHA_OI_HONG_LON_250",
+    "color": "#6824c8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_KOMBUCHA_CHANH_DAY_LON_250",
+    "color": "#ed7c24",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_KOMBUCHA_NGUYEN_BAN_LON_250",
+    "color": "#34e7b3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_KOMBUCHA_VAI_KIWI_LON_250",
+    "color": "#7924bf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_KOMBUCHA_ATISO_DO_LON_250",
+    "color": "#fd17d4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_KOMBUCHA_MO_LON_250",
+    "color": "#68c13d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_KOMBUCHA_CAM_YUZU_LON_250",
+    "color": "#17a216",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_KOMBUCHA_CAM_DAO_LON_250",
+    "color": "#79f86b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_KOMBUCHA_LUU_DO_LON_250",
+    "color": "#0b1c63",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_KOMBUCHA_XOAI_KIWI_LON_250",
+    "color": "#4f4358",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_KOMBUCHA_DAU_TAY_LON_250",
+    "color": "#4e5835",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_KOMBUCHA_OI_HONG_LON_250",
+    "color": "#80789a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_KOMBUCHA_CHANH_DAY_LON_250",
+    "color": "#c917e3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_KOMBUCHA_NGUYEN_BAN_LON_250",
+    "color": "#ebc3ce",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_KOMBUCHA_VAI_KIWI_LON_250",
+    "color": "#aa3237",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_KOMBUCHA_ATISO_DO_LON_250",
+    "color": "#425e61",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_KOMBUCHA_MO_LON_250",
+    "color": "#f3d3d9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_KOMBUCHA_MIX_VI_LON_250",
+    "color": "#c14932",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_KOMBUCHA_MIX_VI_LON_250",
+    "color": "#acf949",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ASAHI_SUPER_DRY_LON_330",
+    "color": "#4551c3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ASAHI_SUPER_DRY_LON_500",
+    "color": "#2529ea",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ASAHI_SUPER_DRY_LON_TET_330",
+    "color": "#588530",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ASAHI_SUPER_DRY_CHAI_330",
+    "color": "#6991cd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ASAHI_GOLD_LON_350",
+    "color": "#6d15be",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_ASAHI_SUPER_DRY_LON_330",
+    "color": "#0e1237",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_ASAHI_SUPER_DRY_LON_330",
+    "color": "#3fcf57",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_ASAHI_SUPER_DRY_LON_TET_330",
+    "color": "#fd5855",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_ASAHI_SUPER_DRY_LON_TET_330",
+    "color": "#f574fb",
+    "type": "any",
+    "attributes": []
+  },
+  
+  {
+    "name": "PACK_3_PEPSI_VI_CHANH_KHONG_CALO_CHAI_390",
+    "color": "#e434fb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_PEPSI_VI_CHANH_KHONG_CALO_LON_330/320",
+    "color": "#17c653",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_AQUAFINA_SODA_LON_320",
+    "color": "#e5952a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_AQUAFINA_SODA_LON_320",
+    "color": "#0efbe0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "STING_VANG_CHAI_500",
+    "color": "#46410b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_STING_VANG_CHAI_500",
+    "color": "#2aa3d9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_STING_VANG_CHAI_500",
+    "color": "#44291b",
+    "type": "any",
+    "attributes": []
+  },
+ 
+  {
+    "name": "FAITH_CHANH_MUOI_CHAI_355",
+    "color": "#421a08",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HALIDA_LON_VANG_330",
+    "color": "#c819ea",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HALIDA_LON_DO_500",
+    "color": "#3c0c65",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HALIDA_LON_VANG_330",
+    "color": "#550eb2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HALIDA_LON_DO_500",
+    "color": "#7bc86f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_HALIDA_LON_VANG_330",
+    "color": "#bce1cc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_HALIDA_LON_DO_500",
+    "color": "#b7ce6f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COZY_TRA_BI_DAO_LON_320",
+    "color": "#363820",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COZY_TRA_OI_HONG_CHAI_455",
+    "color": "#5b87c1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COZY_TRA_OLONG_XOAI_CHAI_455",
+    "color": "#5b97a2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COZY_TRA_VAI_CHAI_455",
+    "color": "#7695d7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COZY_TRA_DAO_SA_CHAI_455",
+    "color": "#b79300",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COZY_TRA_TAC_MAT_ONG_CHAI_455",
+    "color": "#998177",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TVT_TRA_DAO_CHAI_450",
+    "color": "#314a1e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TVT_TRA_TAC_MAT_ONG_CHAI_450",
+    "color": "#17a0f7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TVT_TRA_VIET_QUAT_CHAI_450",
+    "color": "#66ba1b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TVT_TRA_VAI_CHAI_450",
+    "color": "#f6d853",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CARABAO_CHAI_150",
+    "color": "#524b16",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CARABAO_CHAI_150",
+    "color": "#9e6d00",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CARABAO_CHAI_150",
+    "color": "#5e2567",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "DAI_VIET_LAGER_LON_330",
+    "color": "#e089b6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "DAI_VIET_LAGER_CHAI_330",
+    "color": "#42d8e8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "DAI_VIET_SUPER_CHAI_330",
+    "color": "#219627",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "DAI_VIET_SILVER_LON_330",
+    "color": "#415505",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "DAI_VIET_DEN_LON_330",
+    "color": "#19bf3b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "DAI_VIET_DEN_CHAI_330",
+    "color": "#cc1a62",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "DAI_VIET_PILSNER_LON_330",
+    "color": "#d2e808",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "DAI_VIET_RED_LON_330",
+    "color": "#531fc1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_DAI_VIET_LAGER_LON_330",
+    "color": "#96712c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_DAI_VIET_LAGER_CHAI_330",
+    "color": "#93f7b0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_DAI_VIET_SUPER_CHAI_330",
+    "color": "#57e22d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_DAI_VIET_SILVER_LON_330",
+    "color": "#9327c3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_DAI_VIET_DEN_LON_330",
+    "color": "#acba75",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_DAI_VIET_DEN_CHAI_330",
+    "color": "#bb593b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_DAI_VIET_PILSNER_LON_330",
+    "color": "#0da59f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_DAI_VIET_RED_LON_330",
+    "color": "#633868",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_DAI_VIET_LAGER_LON_330",
+    "color": "#4bec34",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_DAI_VIET_LAGER_CHAI_330",
+    "color": "#ae4a2d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_DAI_VIET_SUPER_CHAI_330",
+    "color": "#f57097",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_DAI_VIET_SILVER_LON_330",
+    "color": "#294b9d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_DAI_VIET_DEN_LON_330",
+    "color": "#d4e8b9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_DAI_VIET_DEN_CHAI_330",
+    "color": "#845dcc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_DAI_VIET_PILSNER_LON_330",
+    "color": "#20f163",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_DAI_VIET_RED_LON_330",
+    "color": "#54e559",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HA_NOI_BOLD_CHAI_350",
+    "color": "#b5e3c9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HA_NOI_BOLD_LON_330",
+    "color": "#139e26",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HA_NOI_LIGHT_CHAI_355",
+    "color": "#81aa98",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HA_NOI_LIGHT_LON_330",
+    "color": "#f01391",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_BUDWEISER_SLEEK_CHAI_NHOM_330",
+    "color": "#61635d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_BUDWEISER_SLEEK_CHAI_NHOM_330",
+    "color": "#79fdfb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_BUDWEISER_BUDVAR_CHAI_330",
+    "color": "#b869df",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_BUDWEISER_BUDVAR_CHAI_330",
+    "color": "#7a930f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CORONA_EXTRA_CHAI_330/355",
+    "color": "#cbdac1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CORONA_EXTRA_CHAI_330/355",
+    "color": "#7c29f0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHUONG_DUONG_SA_XI_LON_320",
+    "color": "#bb938b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHUONG_DUONG_SA_XI_ZERO_LON_320",
+    "color": "#ff0db0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHUONG_DUONG_SA_XI_CHAI_230/240",
+    "color": "#6d5642",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHUONG_DUONG_SA_XI_CHAI_390",
+    "color": "#9a5331",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "CHUONG_DUONG_SA_XI_CHAI_1.5L",
+    "color": "#95b57c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHUONG_DUONG_SA_XI_LON_320",
+    "color": "#eb01a8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHUONG_DUONG_SA_XI_ZERO_LON_320",
+    "color": "#d50a29",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHUONG_DUONG_SA_XI_CHAI_230/240",
+    "color": "#96f386",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHUONG_DUONG_SA_XI_CHAI_390",
+    "color": "#77478f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_CHUONG_DUONG_SA_XI_CHAI_1.5L",
+    "color": "#edc5b0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHUONG_DUONG_SA_XI_LON_320",
+    "color": "#3c9953",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHUONG_DUONG_SA_XI_ZERO_LON_320",
+    "color": "#9581fc",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHUONG_DUONG_SA_XI_CHAI_230/240",
+    "color": "#bdb90b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHUONG_DUONG_SA_XI_CHAI_390",
+    "color": "#c69a38",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_CHUONG_DUONG_SA_XI_CHAI_1.5L",
+    "color": "#425ba7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_SAPPORO_PREMIUM_LON_500/650",
+    "color": "#45e469",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_SAPPORO_PREMIUM_LON_500/650",
+    "color": "#c6803e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_TUBORG_ICE_TET_LON_330",
+    "color": "#2db17c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_TUBORG_ICE_TET_LON_330",
+    "color": "#65b20c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MILO_TEEN_X2_HOP_210",
+    "color": "#68f029",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MILO_TEEN_X2_LON_240",
+    "color": "#4caffa",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MILO_LUA_MACH_LON_210",
+    "color": "#7fd6a2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_NUOC_DUA_XIEM_XANH_HOP_1L",
+    "color": "#89db37",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "COCOXIM_NUOC_DUA_XIEM_SEN_HOP_1L",
+    "color": "#c2e2bb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ASAHI_DRY_ZERO_LON_330/350",
+    "color": "#742867",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_ASAHI_DRY_ZERO_LON_330/350",
+    "color": "#66c1ca",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_ASAHI_DRY_ZERO_LON_330/350",
+    "color": "#57fdf0",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TIGER_COOL_PACK_LON_250",
+    "color": "#3f37d1",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MAMAPOP_CAM_DAO_LON_330",
+    "color": "#3f853b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MAMAPOP_XOAI_KIWI_LON_330",
+    "color": "#1a52fb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MAMAPOP_OI_HONG_LON_330",
+    "color": "#71cac7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MAMAPOP_BUOI_HONG_LON_330",
+    "color": "#f43208",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MAMAPOP_CAM_YUZU_LON_330",
+    "color": "#481e16",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MAMAPOP_BIA_GUNG_LON_330",
+    "color": "#5671a7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MAMAPOP_CAM_DAO_LON_330",
+    "color": "#0f7424",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MAMAPOP_XOAI_KIWI_LON_330",
+    "color": "#1c09f6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MAMAPOP_OI_HONG_LON_330",
+    "color": "#c97b34",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MAMAPOP_BUOI_HONG_LON_330",
+    "color": "#c6ecec",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MAMAPOP_CAM_YUZU_LON_330",
+    "color": "#68d1e6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MAMAPOP_BIA_GUNG_LON_330",
+    "color": "#976bd8",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MAMAPOP_CAM_DAO_LON_330",
+    "color": "#198d62",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MAMAPOP_XOAI_KIWI_LON_330",
+    "color": "#c1fb56",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MAMAPOP_OI_HONG_LON_330",
+    "color": "#222dfe",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MAMAPOP_BUOI_HONG_LON_330",
+    "color": "#37b755",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MAMAPOP_CAM_YUZU_LON_330",
+    "color": "#316d2d",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MAMAPOP_BIA_GUNG_LON_330",
+    "color": "#5fe733",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_BOSS_LON_CA_PHE_SUA",
+    "color": "#054004",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_BOSS_LON_CA_PHE_SUA",
+    "color": "#bcbe3e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TSINGTAO_LEMON_0.0_LON_330",
+    "color": "#a0c533",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "HA_NOI_NHAN_XANH_LON_TET_330",
+    "color": "#7ab357",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ICE+_AM_18_DAO_CHAI_490/500",
+    "color": "#789297",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ICE+_AM_18_TAO_KIWI_CHAI_490/500",
+    "color": "#577144",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ICE+_AM_18_NHO_CHAI_490/500",
+    "color": "#4e746f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ICE+_AM_18_CAM_CHANH_CHAI_490/500",
+    "color": "#a4be93",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "ICE+_AM_18_DUA_LUOI_CHAI_490/500",
+    "color": "#7f8228",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TH_SUA_TRAI_CAY_MANG_CAU_CHAI_300",
+    "color": "#31dc17",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TH_SUA_TRAI_CAY_CHUOI_CHAI_300",
+    "color": "#5d3108",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TH_SUA_TRAI_CAY_VIET_QUAT_CHAI_300",
+    "color": "#2d0a26",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TH_SUA_TRAI_CAY_CAM_CHAI_300",
+    "color": "#24449f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TH_SUA_TRAI_CAY_DAU_CHAI_300",
+    "color": "#18e22f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TH_NUOC_TAO_DAO_CHAI_350",
+    "color": "#38924e",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TH_NUOC_CAM_CHAI_350",
+    "color": "#df4c98",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TH_NUOC_TAO_TU_NHIEN_CHAI_350",
+    "color": "#f251a7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TH_NUOC_GAO_RANG_CHAI_300",
+    "color": "#735d9f",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "TH_NUOC_GAO_LUT_DO_CHAI_300",
+    "color": "#691efd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MACCOFFEE_CAFE_PHO_SUA_DA_LON_235",
+    "color": "#e8a583",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "BUDWEISER_SLEEK_LON_TET_330/500",
+    "color": "#3168ac",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_BUDWEISER_SLEEK_LON_TET_330/500",
+    "color": "#5d1c4a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_BUDWEISER_SLEEK_LON_TET_330/500",
+    "color": "#054288",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_ICE+_AM_18_TAO_KIWI_CHAI_490/500",
+    "color": "#b173b5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_AM_196_SODA_CHANH_LON_320",
+    "color": "#22e0cd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_AM_196_SODA_DAO_LON_320",
+    "color": "#82d5a6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_AM_196_SODA_CHANH_LON_320",
+    "color": "#92e1e5",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_AM_196_SODA_DAO_LON_320",
+    "color": "#b0efbe",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_1664_BLANC_CHAI_330",
+    "color": "#0366c4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_1664_BLANC_CHAI_330",
+    "color": "#fabef2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_HOEGAARDEN_WHITE_CHAI_330",
+    "color": "#a659e9",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_HOEGAARDEN_WHITE_CHAI_330",
+    "color": "#c02254",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MIRINDA_DUA_LON_330/320",
+    "color": "#553c8b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MIRINDA_DUA_LON_330/320",
+    "color": "#ba8c74",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MIRINDA_DUA_LON_330/320",
+    "color": "#e05b34",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "MIRINDA_CAM_LON_TET_330/320",
+    "color": "#2d87ee",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_2_MIRINDA_CAM_LON_TET_330/320",
+    "color": "#f7f76c",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "PACK_3_MIRINDA_CAM_LON_TET_330/320",
+    "color": "#5a22f7",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "NUMBER_1_CHANH_MUOI_CHAI_455",
+    "color": "#daa6bb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "WONDERFARM_NUOC_YEN_CAO_CAP_LON_180",
+    "color": "#6b1040",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "WONDERFARM_NUOC_SAM_CAO_LY_LON_240",
+    "color": "#0facbf",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "WONDERFARM_NUOC_ME_LON_310",
+    "color": "#06374a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "WONDERFARM_NUOC_CHANH_DAY_LON_310",
+    "color": "#08183a",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "WONDERFARM_TRA_BI_DAO_LON_310",
+    "color": "#cc8536",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "WONDERFARM_TRA_BI_DAO_CHAI_500",
+    "color": "#2bc8ce",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "WONDERFARM_TRA_BI_DAO_CHAI_1L",
+    "color": "#577b6a",
+    "type": "any",
+    "attributes": []
+  }
+]

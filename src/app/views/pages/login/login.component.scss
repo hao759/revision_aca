@@ -1,0 +1,108 @@
+divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    // background: #eee;
+}
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+section {
+    background: url("https://mianco.com.vn/wp-content/uploads/2020/02/Background-login.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh; 
+  }
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+.bg-trungthu {
+    /* The image used */
+    background-image: url("https://img3.thuthuatphanmem.vn/uploads/2019/09/11/anh-background-de-tai-trung-thu_105458853.jpg");
+
+    /* Full height */
+    height: 100vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-noel {
+    /* The image used */
+    background-image: url("https://inlayngay.vn/media/data/blog/2021/noel_2021/vector_noel1.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-forgot {
+    &:hover {
+        text-decoration: underline;
+    }
+    cursor: pointer;
+    text-align: right;
+}
+
+#slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  
+    .slides {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      animation: fade 12s infinite;
+  
+      &:nth-child(1) { animation-delay: 0s; }
+      &:nth-child(2) { animation-delay: 3s; }
+      &:nth-child(3) { animation-delay: 6s; }
+      &:nth-child(4) { animation-delay: 9s; }
+    }
+  }
+  
+  @keyframes fade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  
+  
+img{
+    width: 100%;
+}
+  
+.active{
+    background: black;
+}
+  
+// @media (max-width: 567px){
+//     #slider{
+//         width: 100%;
+
+//     }
+// }
+  
+#heading{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0px;
+}
+

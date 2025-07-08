@@ -1,0 +1,183 @@
+<!-- <c-toast [autohide]="true" [delay]="2000" [visible]="toast.visible_toast"
+    style="position:fixed; top:80px ; right:0 ; background-color:cornflowerblue; color:white; z-index: 1000;">
+    <c-toast-header>
+        <strong class="mr-auto">Thông báo</strong>
+    </c-toast-header>
+    <c-toast-body class="{{ toast.background }}">
+        {{ toast.message_toast }}
+    </c-toast-body>
+</c-toast>
+<div class="container1">
+    <div class="col-12 mt-1" style="text-align: center;">
+    </div>
+
+    <div class=" col-12" style="text-align: center;">
+        <div class="card">
+            <div class="row">
+                <c-col md="3">
+                    <div class="upload-content text-center p-2" style="margin-top: 5%;">
+                        <input type="file" #fileUploader hidden multiple accept="zip/*" (change)="onUpload($event)">
+                        <button cButton color="primary" (click)="fileUploader.click()">
+                            Chọn Hình
+                        </button>
+                        <p class="mt-2 small text-muted">
+                        </p>
+                    </div>
+
+                </c-col>
+                <c-col md="3">
+                    <span class="clearfix">
+                        <h6 class="pt-2">Chọn Project</h6>
+                    </span>
+
+                    <select cSelect [(ngModel)]="selected_project"
+                        style="padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                        <option [value]="30">UMER</option>
+                        <option [value]="34">Ken</option>
+                    </select>
+
+                </c-col>
+                <c-col md="3">
+                    <span class="clearfix">
+                        <h6 class="pt-2">Chọn Project</h6>
+                    </span>
+
+                    <button (click)="Filter()">Filter</button>
+
+                </c-col>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div *ngIf="result.length>0" class=" col-12" style="text-align: center;">
+        <div class="card">
+            <div class="row">
+                <table style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Số lượng hình</th>
+                            <th>Tên file zip</th>
+                            <th>Ngày Upload</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of result;index as i">
+                            <td>{{ item.id}} </td>
+                            <td>{{ item.count_image}} </td>
+                            <td>{{item.name_file}}</td>
+                            <td>{{item.created_date}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div> 
+
+
+
+
+
+    <div style="z-index: 1;" *ngIf="preloading">
+        <ul class="preload">
+            <li data-title="L">L</li>
+            <li data-title="O">O</li>
+            <li data-title="A">A</li>
+            <li data-title="D">D</li>
+            <li data-title="I">I</li>
+            <li data-title="N">N</li>
+            <li data-title="G">G</li>
+        </ul>
+    </div>
+
+</div>-->
+<c-toast [autohide]="true" [delay]="2000" [visible]="toast.visible_toast" class="toast-custom">
+    <c-toast-header>
+        <strong class="me-auto">Thông báo</strong>
+    </c-toast-header>
+    <c-toast-body class="{{ toast.background }}">
+        {{ toast.message_toast }}
+    </c-toast-body>
+</c-toast>
+
+<div class="container-fluid container1 py-4">
+    <!-- Upload Section -->
+    <div class="col-12 mb-4">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <div class="row align-items-center g-3">
+                    <!-- Upload File -->
+                    <c-col md="4">
+                        <div class="upload-content text-center p-3">
+                            <input type="file" #fileUploader hidden multiple accept="zip/*" (change)="onUpload($event)">
+                            <button cButton class="btn-upload" (click)="fileUploader.click()">
+                                <i class="bi bi-upload me-2"></i>Chọn File Zip
+                            </button>
+                            <p class="mt-2 small text-muted">Chỉ chấp nhận file .zip</p>
+                        </div>
+                    </c-col>
+                    <!-- Select Project -->
+                    <c-col md="4">
+                        <label class="form-label fw-bold">Chọn Project</label>
+                        <select cSelect [(ngModel)]="selected_project" class="form-select">
+                            <option [value]="30">UMER</option>
+                            <option [value]="34">Ken</option>
+                            <option [value]="31">Pepsi</option>
+                        </select>
+                    </c-col>
+                    <!-- Filter Button -->
+                    <c-col md="1">
+                        <label class="form-label fw-bold">&nbsp;</label>
+                        <button cButton class="btn-filter w-100" (click)="Filter()">
+                            <i class="bi bi-funnel me-2"></i>Lọc
+                        </button>
+                    </c-col>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Result Table -->
+    <div *ngIf="result.length > 0" class="col-12">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Tên file zip</th>
+                                <th scope="col">Số lượng hình</th>
+                                <th scope="col">Ngày Upload</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of result; index as i">
+                                <td>{{ i+1}}</td>
+                                <td>{{ item.name_file }}</td>
+                                <td>{{ item.count_image }}</td>
+                                <td>{{ item.created_date | date:'dd/MM/yyyy HH:mm' }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Animation -->
+    <div class="loading-overlay" *ngIf="preloading">
+        <ul class="preload">
+            <li data-title="L">L</li>
+            <li data-title="O">O</li>
+            <li data-title="A">A</li>
+            <li data-title="D">D</li>
+            <li data-title="I">I</li>
+            <li data-title="N">N</li>
+            <li data-title="G">G</li>
+        </ul>
+    </div>
+</div>

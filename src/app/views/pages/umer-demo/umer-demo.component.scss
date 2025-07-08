@@ -1,0 +1,87 @@
+.card-data {
+  padding: 0 !important;
+}
+
+.pt-3 {
+  padding-top: 0px !important;
+}
+
+.table-container {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.table-container thead {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+}
+.custom-ng-select ::ng-deep .ng-dropdown-panel .ng-option {
+  text-align: left;
+}
+// c-card {
+//   padding: 1rem;
+//   border-radius: 12px;
+//   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+//   background-color: #fff;
+//   border: 1px solid #e0e0e0;
+// }
+
+// c-row {
+//   row-gap: 1rem;
+//   column-gap: 0.5rem;
+// }
+
+// c-col {
+//   margin-bottom: 1rem;
+
+//   h6 {
+//     font-size: 0.95rem;
+//     font-weight: 600;
+//     margin-bottom: 0.5rem;
+//     color: #333;
+//     padding-top: 0.25rem;
+//   }
+
+//   input {
+//     width: 100%;
+//     padding: 0.5rem 0.75rem;
+//     border-radius: 8px;
+//     border: 1px solid #ccc;
+//     font-size: 0.9rem;
+//     transition: border-color 0.2s;
+//   }
+
+//   input:focus {
+//     outline: none;
+//     border-color: #3399ff;
+//     box-shadow: 0 0 0 0.1rem rgba(51, 153, 255, 0.2);
+//   }
+// }
+
+// .upload-content {
+//   background-color: #f9f9f9;
+//   border: 2px dashed #bbb;
+//   border-radius: 10px;
+//   padding: 1rem;
+//   margin-top: 1rem;
+//   transition: background-color 0.3s ease;
+
+//   &:hover {
+//     background-color: #f0f0f0;
+//   }
+
+//   button {
+//     border-radius: 8px;
+//     padding: 0.5rem 1.25rem;
+//     font-weight: 500;
+//     font-size: 0.95rem;
+//   }
+
+//   p {
+//     font-size: 0.8rem;
+//     color: #888;
+//     margin-top: 0.5rem;
+//   }
+// }

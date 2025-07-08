@@ -1,0 +1,224 @@
+<c-card class="mt-1 mb-1">
+  <c-row class="p-2">
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Từ ngày</h6>
+      </span>
+      <c-date-picker inputReadOnly [(ngModel)]="fromDate" #datePicker="cDatePicker" [calendarDate]="calendarFromDate" />
+    </c-col>
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Đến ngày</h6>
+      </span>
+      <c-date-picker inputReadOnly [(ngModel)]="toDate" #datePicker="cDatePicker" [calendarDate]="calendarToDate" />
+    </c-col>
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Nhân viên</h6>
+      </span>
+      <c-input-group class="input-prepend">
+        <span cInputGroupText>
+          <svg cIcon name="cilMagnifyingGlass"></svg>
+        </span>
+        <input cFormControl placeholder="Nhân viên" type="text" [(ngModel)]="employee_code" />
+      </c-input-group>
+    </c-col>
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Cửa hàng</h6>
+      </span>
+      <c-input-group class="input-prepend">
+        <span cInputGroupText>
+          <svg cIcon name="cilMagnifyingGlass"></svg>
+        </span>
+        <input cFormControl placeholder="Cửa hàng" type="text" [(ngModel)]="shop_code" />
+      </c-input-group>
+    </c-col>
+  </c-row>
+  <c-row class="p-2">
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Mã báo cáo</h6>
+      </span>
+      <c-input-group class="input-prepend">
+        <span cInputGroupText>
+          <svg cIcon name="cilMagnifyingGlass"></svg>
+        </span>
+        <input cFormControl placeholder="Mã báo cáo" type="text" [(ngModel)]="report_code" />
+      </c-input-group>
+    </c-col>
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Promotion ID</h6>
+      </span>
+      <c-input-group class="input-prepend">
+        <span cInputGroupText>
+          <svg cIcon name="cilMagnifyingGlass"></svg>
+        </span>
+        <input cFormControl placeholder="Promotion ID" type="text" [(ngModel)]="promotion_id" />
+      </c-input-group>
+    </c-col>
+  </c-row>
+  <!-- <c-row class="p-2">
+
+  </c-row> -->
+  <hr />
+  <c-row class="p-2">
+    <c-col md="12">
+      <button cButton color="primary" (click)="Filter(1)">Tìm kiếm</button>
+    </c-col>
+  </c-row>
+</c-card>
+<c-card>
+  <div class="fade show"
+    style="{{!this.isLoading ? 'display: none;': ''}} text-align: center; height: 20vh ; padding-top:calc(20vh / 2);">
+    <i class="spinner-grow spinner-grow-sm text-success"></i>
+    <span class="m-1 text-success">Đang load dữ liệu</span>
+  </div>
+  <c-row *ngIf="this.filterData && this.filterData.length > 0">
+    <c-col xs="12">
+      <c-card>
+        <c-card-body class="card-data">
+          <c-smart-table #smartTable="cSmartTable" [columns]="columns" header [itemsPerPageSelect]="true"
+            [itemsPerPage]="20" [items]="this.filterData" loading
+            [tableProps]="{ hover: true,bordered:true, striped: false, responsive: true }">
+            <!-- pagination -->
+            <ng-template cTemplateId="tableData" let-columnName="columnName" let-item="item" let-tdContent="tdContent">
+              <td [cAlign]="smartTable.getTableDataCellProps(item, columnName)?.['align']"
+                [cTableActive]="smartTable.getTableDataCellProps(item, columnName)?.['active']"
+                [cTableColor]="smartTable.getTableDataCellProps(item, columnName)?.['color']"
+                [ngClass]="smartTable.getTableDataCellClass(item, columnName)"
+                style="{{this.details_visible[item.detect_id]?.visible ? 'background-color:#f2f2f2' : ''}}">
+                @switch (columnName) {
+                @case ('show') {
+                <button (click)="toggleDetails(item)" cButton color="primary">
+                  <svg cIcon
+                    name="{{this.details_visible[item.detect_id]?.visible === true ? 'cilMinus' : 'cilPlus'}}"></svg>
+                </button>
+                }
+                @case ('detect_verify') {
+                <button
+                  disabled="{{ item.detect_verify == 1  || this.item_visible[item.detect_id]?.detect_verify == 1 ? true : false}}"
+                  (click)="QCSave(item)" cButton color="primary">
+                  {{ item.detect_verify == 1 || this.item_visible[item.detect_id]?.detect_verify == 1 ? "Đã xác nhận" :
+                  "Xác nhận" }}
+                </button>
+                }
+                @default {
+                {{ tdContent }}
+                }
+                }
+              </td>
+            </ng-template>
+            <ng-template cTemplateId="tableDetails" let-item="item">
+              <div [visible]="this.details_visible[item.detect_id]?.visible" cCollapse>
+                <c-row class="bg-light-subtle p-1 w-100 text-center">
+                  <c-col lg="7">
+                    <table class="table table-bordered table-hover" cTable>
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Mã sản phẩm</th>
+                          <th scope="col">Tên sản phẩm</th>
+                          <th scope="col">Facing Detected</th>
+                          <th scope="col">Facing</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let itemDetail of this.details_visible[item.detect_id]?.dataDetails; index as i;">
+                          <td>{{itemDetail.sku_id}}</td>
+                          <td>{{itemDetail.sku_code}}</td>
+                          <td>{{itemDetail.sku_name}}</td>
+                          <td>{{itemDetail.sku_facing_ai}}</td>
+                          <td>
+                            <c-input-group>
+                              <input cFormControl type="number" placeholder="blank = Facing Detected" name="sku_facing"
+                                style="text-align: center; {{ itemDetail.sku_facing && itemDetail.sku_facing_ai !=itemDetail.sku_facing ? 'font-weight: bold;color:red':'' }}"
+                                [(ngModel)]="itemDetail.sku_facing"
+                                disabled="{{this.details_visible[item.detect_id]?.detect_verify == 1 ? true : false}}" />
+                            </c-input-group>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <c-row>
+                      <div class="float-left">
+                        <button disabled="{{this.details_visible[item.detect_id]?.detect_verify == 1 ? true : false}}"
+                          color="primary" cButton size="md" variant="outline"
+                          (click)="SaveDetail(this.details_visible[item.detect_id]?.dataDetails)">Lưu</button>
+                      </div>
+                    </c-row>
+                  </c-col>
+                  <c-col lg="5">
+                    <c-carousel [dark]="true" [wrap]="false">
+                      <c-carousel-indicators></c-carousel-indicators>
+                      <c-carousel-inner>
+                        @for (slide of this.details_visible[item.detect_id]?.photoDetails; track slide.src;let idx =
+                        $index) {
+
+                        <!-- <div class="{{idx === 0 ? 'carousel-item active' : 'carousel-item'}}"
+                          data-coreui-interval="-99999999">
+                          <img [src]="slide.src" alt="{{slide.title}}" class="d-block " style="width: 90%;"
+                            loading="lazy"
+                            (click)="showImage(slide._index,this.details_visible[item.detect_id]?.photoDetails)" />
+
+                        </div> -->
+                        <div class="{{idx === 0 ? 'carousel-item active' : 'carousel-item'}}"
+                          data-coreui-interval="-99999999">
+                          <div style="cursor: pointer;text-align: left;" (click)="downloadImage(slide.photo_url)"><svg
+                              cIcon name="cil-arrow-thick-to-bottom" size="lg"></svg></div>
+
+                          <img *ngIf="!slide.src" [src]="slide.photo_url" alt="{{slide.title}}" class="d-block "
+                            style="width: 90%;" loading="lazy" (click)="openImageInNewWindow(slide.photo_url,2)" />
+                          <!-- (click)="showImage(slide._index,this.details_visible[item.detect_id]?.photoDetails)"  -->
+                          <div *ngIf="slide.src" (click)="openImageInNewWindow(slide.src,1)">
+                            <object style="pointer-events: none;" type="image/svg+xml" [attr.data]="slide.src">
+                            </object>
+                          </div>
+
+
+                        </div>
+                        }
+                      </c-carousel-inner>
+                      <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+                      <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+                    </c-carousel>
+                    <!-- <c-carousel >
+                    <c-carousel-inner>
+                      <c-carousel-item *ngFor="let slide of this.details_visible[item.audit_id]?.photoDetails;">
+                        <img
+                          [src]="slide.src"
+                          alt="{{slide.title}}"
+                          class="d-block w-100"
+                          loading="lazy"
+                          style="height: 400px;"
+                        />
+                        <c-carousel-caption class="d-none d-md-block">
+                          <h3>{{slide.title}}</h3>
+                          <p>{{slide.subtitle}}</p>
+                        </c-carousel-caption>
+                      </c-carousel-item>
+                    </c-carousel-inner>
+                    <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+                    <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+                  </c-carousel> -->
+                  </c-col>
+                </c-row>
+              </div>
+            </ng-template>
+          </c-smart-table> </c-card-body>
+        <c-smart-pagination [activePage]="currentPage" [pages]="totalPages" align="center"
+          (activePageChange)="onPageChange($event)">
+        </c-smart-pagination>
+      </c-card>
+    </c-col>
+  </c-row>
+</c-card>
+
+<c-modal id="liveDemoModal" [visible]="visible" (visibleChange)="handleLiveDemoChange($event)">
+  <c-modal-header>
+    <h5 cModalTitle>Thông báo</h5>
+    <button (click)="toggleLiveDemo()" cButtonClose></button>
+  </c-modal-header>
+  <c-modal-body>{{this.message}}</c-modal-body>
+</c-modal>

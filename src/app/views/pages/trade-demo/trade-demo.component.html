@@ -1,0 +1,212 @@
+<c-card class="mt-1 mb-1">
+    <c-row class="p-2">
+        <!-- <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Từ ngày</h6>
+      </span>
+      <c-date-picker inputReadOnly [(ngModel)]="fromDate" [inputDateFormat]="formatDate" #datePicker="cDatePicker" />
+    </c-col>
+    <c-col md="3">
+      <span class="clearfix">
+        <h6 class="pt-3">Đến ngày</h6>
+      </span>
+      <c-date-picker inputReadOnly [(ngModel)]="toDate" [inputDateFormat]="formatDate" #datePicker="cDatePicker" />
+    </c-col> -->
+
+
+
+        <c-col md="3">
+            <span class="clearfix">
+                <h6 class="pt-3">audit_id</h6>
+            </span>
+            <c-input-group class="input-prepend">
+                <input cFormControl placeholder="Nhập audit_id" type="text" [(ngModel)]="audit_id" />
+            </c-input-group>
+        </c-col>
+        <c-col md="3">
+            <span class="clearfix">
+                <h6 class="pt-3">audit_date</h6>
+            </span>
+            <c-input-group class="input-prepend">
+                <input cFormControl placeholder="Nhập audit_date" type="text" [(ngModel)]="audit_date" />
+            </c-input-group>
+        </c-col>
+        <c-col md="3">
+            <span class="clearfix">
+                <h6 class="pt-3">shop_code</h6>
+            </span>
+            <c-input-group class="input-prepend">
+                <input cFormControl placeholder="Nhập shop_code" type="text" [(ngModel)]="shop_code" />
+            </c-input-group>
+        </c-col>
+        <c-col md="3">
+            <span class="clearfix">
+                <h6 class="pt-3">emp_code</h6>
+            </span>
+            <c-input-group class="input-prepend">
+                <input cFormControl placeholder="Nhập emp_code" type="text" [(ngModel)]="emp_code" />
+            </c-input-group>
+        </c-col>
+        <c-col md="3">
+            <span class="clearfix">
+                <h6 class="pt-3">project_id</h6>
+            </span>
+            <c-input-group class="input-prepend">
+                <input cFormControl placeholder="Nhập project_id" type="text" [(ngModel)]="project_id" />
+            </c-input-group>
+        </c-col>
+        <c-col md="3">
+            <span class="clearfix">
+                <h6 class="pt-3">kpi_name</h6>
+            </span>
+            <c-input-group class="input-prepend">
+                <input cFormControl placeholder="Nhập kpi_name" type="text" [(ngModel)]="kpi_name" />
+            </c-input-group>
+        </c-col>
+        <c-col md="3">
+            <span class="clearfix">
+                <h6 class="pt-3">unique_code</h6>
+            </span>
+            <c-input-group class="input-prepend">
+                <input cFormControl placeholder="Nhập unique_code" type="text" [(ngModel)]="unique_code" />
+            </c-input-group>
+        </c-col>
+        <div class=" col-12" style="text-align: center;">
+            <div class="card">
+                <div class="row">
+                    <c-col md="3">
+                        <div class="upload-content text-center p-2" style="margin-top: 5%;">
+                            <input type="file" #fileUploader hidden multiple accept="image/*"
+                                (change)="onUpload($event)">
+                            <button cButton color="primary" (click)="fileUploader.click()">
+                                Chọn Hình
+                            </button>
+                            <p class="mt-2 small text-muted">
+                            </p>
+                        </div>
+                    </c-col>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <c-row class="p-2">
+      <div style="display: flex; gap:5px">
+        <button cButton color="primary" (click)="filter(1)"> <svg cIcon name="cilSearch"></svg> Tìm
+          kiếm</button>
+        <button cButton color="primary" (click)="export()"> <svg cIcon name="cilDataTransferDown"></svg>
+          Export</button>
+        <button cButton color="primary" (click)="showImportFile = !showImportFile" *ngIf="isSup"> <svg cIcon
+            name="cilLevelUp"></svg>
+          Khóa ATD</button>
+      </div>
+
+      
+    </c-row> -->
+    </c-row>
+</c-card>
+<div class="fade show" *ngIf="this.isLoading"
+    style="text-align: center; height: 20vh ; padding-top:calc(20vh / 2); background-color: white;">
+    <i class="spinner-grow spinner-grow-sm text-success"></i>
+    <span class="m-1 text-success">Đang load dữ liệu</span>
+</div>
+<c-card *ngIf="!this.isLoading&&detect_productsTotal">
+
+    <!-- <div class="table-container"> -->
+    <c-row class="bg-light-subtle p-1 w-100 text-center">
+
+        <c-col lg="7">
+            <div class="table-container">
+
+                <c-smart-table #smartTable="cSmartTable" [columns]="columnss" [columnFilter]="true"
+                    [columnSorter]="true" header [itemsPerPageSelect]="true" [itemsPerPage]="500"
+                    [itemsPerPageOptions]="[500, 1000]" [items]="this.detect_productsTotal" loading
+                    [tableProps]="{ hover: true,bordered:true, striped: false, responsive: true }">
+
+                    <ng-template cTemplateId="tableData" let-columnName="columnName" let-item="item"
+                        let-tdContent="tdContent">
+                        <td [cAlign]="smartTable.getTableDataCellProps(item, columnName)?.['align']"
+                            [cTableActive]="smartTable.getTableDataCellProps(item, columnName)?.['active']"
+                            [cTableColor]="smartTable.getTableDataCellProps(item, columnName)?.['color']"
+                            [ngClass]="smartTable.getTableDataCellClass(item, columnName)">
+                            <ng-container [ngSwitch]="columnName">
+
+                                <ng-container *ngSwitchCase="'sku_facing'">
+                                    <c-input-group>
+
+
+                                    </c-input-group>
+                                </ng-container>
+                                <!-- <ng-container *ngSwitchCase="'index'">
+                                    {{ getDisplayedIndex(item) }}
+                                </ng-container> -->
+                                <ng-container *ngSwitchCase="'actions'">
+                                    <div style="cursor: pointer" (click)="RemoveItemDetail(item, item)">
+                                        <svg style="color: brown;" cIcon name="cilTrash"></svg>
+                                    </div>
+                                </ng-container>
+
+                                <ng-container *ngSwitchDefault>
+                                    {{ tdContent }}
+                                </ng-container>
+
+                            </ng-container>
+                        </td>
+                    </ng-template>
+
+                </c-smart-table>
+            </div>
+        </c-col>
+
+        <c-col lg="5">
+
+            <c-carousel [dark]="true" [wrap]="false">
+                <c-carousel-indicators />
+                <c-carousel-inner>
+
+                    @for (slide of this.detect_photosTotal; track
+                    slide.photo_guid) {
+                    <c-carousel-item>
+
+                        <!-- <div id="downloadImage"
+                                                        style="cursor: pointer;padding-left: 150px; text-align: left; z-index: 999;"
+                                                        (click)="downloadImage(slide.photo_url)">
+                                                        <svg cIcon name="cil-arrow-thick-to-bottom" size="lg"></svg>
+                                                    </div> -->
+
+                        <!-- <img *ngIf="!slide.detect_url" [src]="slide.photo_url" alt="image"
+                                                        class="d-block" style="width: 90%;" loading="lazy"
+                                                        [cModalToggle]="verticallyCenteredScrollableModal.id"
+                                                        (click)="handleSelectedImg(slide)" /> -->
+
+                        <!-- (click)="openImageInNewWindow(slide.detect_url, 1)" -->
+                        <div (click)="openImageInNewWindow(slide.url_detect,1)">
+                            <object style="pointer-events: none;" type="image/svg+xml" [attr.data]="slide.url_detect">
+                            </object>
+                        </div>
+
+                    </c-carousel-item>
+                    }
+                </c-carousel-inner>
+                <c-carousel-control [routerLink] [size]="'xl'" caption="Previous" direction="prev"></c-carousel-control>
+                <b><c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control></b>
+
+
+            </c-carousel>
+
+        </c-col>
+    </c-row>
+
+
+
+    <!-- </div> -->
+</c-card>
+<c-toast [autohide]="true" [delay]="2000" [visible]="toast.visible_toast"
+  style="position:fixed; top:80px ; right:0 ; background-color:cornflowerblue; color:white; z-index: 1000;">
+  <c-toast-header>
+    <strong class="mr-auto">Thông báo</strong>
+  </c-toast-header>
+  <c-toast-body class="{{ toast.background }}">
+    {{ toast.message_toast }}
+  </c-toast-body>
+</c-toast>

@@ -1,0 +1,786 @@
+import { Component } from '@angular/core';
+import { CommonModule, DatePipe, JsonPipe } from '@angular/common';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { IconDirective, IconSetService } from '@coreui/icons-angular';
+import { brandSet, flagSet, freeSet } from '@coreui/icons';
+import { Pf } from '../../../helper/pf';
+import {
+  RowComponent,
+  ColComponent,
+  InputGroupComponent,
+  InputGroupTextDirective,
+  FormControlDirective,
+  ButtonDirective,
+  CardBodyComponent,
+  CardComponent,
+  TableColorDirective,
+  TableActiveDirective,
+  DatePickerComponent as DatePickerComponent_1,
+  SmartPaginationModule,
+  SmartTableComponent,
+  SmartTableModule,
+  BadgeModule,
+  IColumn,
+  IItem,
+  CollapseDirective,
+  TemplateIdDirective,
+  TextColorDirective,
+  BadgeComponent,
+  AlignDirective,
+  ThemeDirective,
+  CarouselComponent,
+  CarouselIndicatorsComponent,
+  CarouselInnerComponent,
+  CarouselItemComponent,
+  CarouselCaptionComponent,
+  CarouselControlComponent,
+  BorderDirective,
+  CarouselModule,
+  ModalFooterComponent,
+  ModalComponent,
+  ModalHeaderComponent,
+  ModalTitleDirective,
+  ButtonCloseDirective,
+  ModalBodyComponent,
+  ToasterHostDirective,
+} from '@coreui/angular-pro';
+import { ActivatedRoute, RouterLink } from '@angular/router';
+import { NgClass, NgFor, NgIf } from '@angular/common';
+import { DetectAIService } from '../../../services/detectai.service';
+import { EnumStatus } from '../../../Core/_enum';
+import {
+  IDataSync,
+  IDetectAIData,
+  IDetectAIDataDetail,
+  IDetectAIPhotoDetail,
+} from '../../Interface/IDetectAI';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { DomSanitizer } from '@angular/platform-browser';
+
+@Component({
+  selector: 'app-qc-result',
+  templateUrl: './qc-result.component.html',
+  styleUrls: ['./qc-result.component.scss'],
+  providers: [IconSetService, DetectAIService, HttpClient],
+  imports: [
+    RowComponent,
+    ColComponent,
+    InputGroupComponent,
+    InputGroupTextDirective,
+    IconDirective,
+    FormControlDirective,
+    ButtonDirective,
+    CardBodyComponent,
+    CardComponent,
+    TableActiveDirective,
+    TableColorDirective,
+    DatePickerComponent_1,
+    SmartPaginationModule,
+    SmartTableComponent,
+    SmartTableModule,
+    SmartPaginationModule,
+    SmartTableModule,
+    BadgeModule,
+    CollapseDirective,
+    TemplateIdDirective,
+    TextColorDirective,
+    NgClass,
+    BadgeComponent,
+    AlignDirective,
+    ThemeDirective,
+    CarouselComponent,
+    CarouselIndicatorsComponent,
+    CarouselInnerComponent,
+    NgFor,
+    CarouselItemComponent,
+    CarouselCaptionComponent,
+    CarouselControlComponent,
+    RouterLink,
+    BorderDirective,
+    HttpClientModule,
+    NgIf,
+    CommonModule,
+    CarouselModule,
+    ReactiveFormsModule,
+    FormsModule,
+    ModalComponent,
+    ModalHeaderComponent,
+    ModalTitleDirective,
+    ButtonCloseDirective,
+    ModalBodyComponent,
+    ModalFooterComponent,
+    DatePipe,
+    JsonPipe,
+  ],
+})
+export class QCResultComponent {
+  constructor(
+    private route: ActivatedRoute,
+    public iconSet: IconSetService,
+    private detectAIService: DetectAIService,
+    private sanitizer: DomSanitizer,
+  ) {
+    iconSet.icons = { ...freeSet, ...brandSet, ...flagSet };
+    this.sanitizer_var = sanitizer
+  }
+  sanitizer_var: any
+  isLoading: boolean = false;
+  title = 'CoreUI-Angular Smart Table Example';
+  slides: any[] = new Array(3).fill({
+    id: -1,
+    src: '',
+    title: '',
+    subtitle: '',
+  });
+  fromDate: Date | null = new Date();
+  toDate: Date | null = new Date();
+  employee_code: string | null = null;
+  shop_code: string | null = null;
+  report_code: string | null = null;
+  promotion_id: any;
+  public calendarFromDate = new Date(Date.now());
+  public calendarToDate = new Date(Date.now());
+  filterData: IDetectAIData[] = [];
+  dataSync: IDataSync[] = [];
+  columns: IColumn[] = [
+    {
+      key: 'show',
+      label: '',
+      _style: { width: '3%' },
+    },
+    {
+      key: 'detect_id',
+      label: 'DetectId',
+    },
+    {
+      key: 'audit_id',
+      label: 'Id',
+    },
+    {
+      key: 'employee',
+      label: 'Nhân viên',
+    },
+    {
+      key: 'shop_code',
+      label: 'Mã cửa hàng',
+    },
+    {
+      key: 'shop_name',
+      label: 'Tên cửa hàng',
+    },
+    {
+      key: 'shop_address',
+      label: 'Địa chỉ',
+    },
+    {
+      key: 'detected_date',
+      label: 'Detected_Date',
+    },
+    {
+      key: 'qc_update_date',
+      label: 'QC Date',
+    },
+    {
+      key: 'detect_verify',
+      label: '',
+      _style: { width: '10%' },
+    },
+  ];
+  getBadge(status: string) {
+    switch (status) {
+      case 'Active':
+        return 'success';
+      case 'Inactive':
+        return 'secondary';
+      case 'Pending':
+        return 'warning';
+      case 'Banned':
+        return 'danger';
+      default:
+        return 'primary';
+    }
+  }
+  details_visible = Object.create({});
+  item_visible = Object.create({});
+  async toggleDetails(item: any) {
+    if (!this.details_visible[item.detect_id]) {
+      this.details_visible[item.detect_id] = { ...item };
+    }
+    this.details_visible[item.detect_id].visible =
+      !this.details_visible[item.detect_id].visible;
+    if (this.details_visible[item.detect_id].visible) {
+      let datafinal = await this.detectAiDetail(item.detect_id);
+      this.details_visible[item.detect_id].dataDetails = datafinal?.dataDetails;
+      this.details_visible[item.detect_id].photoDetails =
+        datafinal?.photoDetails;
+      if (datafinal?.dataSync && datafinal?.dataSync.length > 0) {
+        datafinal?.dataSync.forEach((data: any) => {
+          if (data.Facing) {
+            let dataItem: IDataSync = {
+              AuditId: data.AuditId,
+              ProductId: data.ProductId,
+              Facing: data.Facing,
+            };
+            let index = this.dataSync.findIndex(
+              (element: IDataSync) =>
+                element.AuditId == data.AuditId &&
+                element.ProductId == data.ProductId
+            );
+            if (index >= 0) {
+              this.dataSync[index].Facing = dataItem.Facing;
+            } else {
+              this.dataSync.push(dataItem);
+            }
+          }
+        });
+      }
+    }
+  }
+
+  async detectAiDetail(item: any) {
+    return new Promise<any>((resolve, reject) => {
+      this.detectAIService.ewo_detectai_detail(item).subscribe((data: any) => {
+        if (data.result == EnumStatus.ok) {
+          const dataDetails = data.data.dataDetails.map((item: any) => {
+            const {
+              row_num,
+              detect_detail_id,
+              sku_code,
+              sku_name,
+              sku_id,
+              sku_facing,
+              sku_facing_ai,
+              audit_id,
+            } = {
+              ...item,
+            } as Partial<NonNullable<typeof item>>;
+            return {
+              row_num,
+              detect_detail_id,
+              sku_code,
+              sku_id,
+              sku_name,
+              sku_facing,
+              sku_facing_ai,
+              audit_id,
+            } as IDetectAIDataDetail;
+          });
+          const photoDetails = data.data.photoDetails.map((item: any) => {
+            let { id, src, title, subtitle, _index } = { ...item } as Partial<
+              NonNullable<typeof item>
+            >;
+            if (src)
+              src = this.sanitizer_var.bypassSecurityTrustResourceUrl(src)
+            return { id, src, title, subtitle, _index } as IDetectAIPhotoDetail;
+          });
+          const dataSync = data.data.dataDetails.map((item: any) => {
+            const { audit_id, sku_code, sku_facing } = {
+              ...item,
+            } as Partial<NonNullable<typeof item>>;
+            return {
+              AuditId: audit_id,
+              ProductId: Number(sku_code),
+              Facing: sku_facing,
+            } as IDataSync;
+          });
+          resolve({ dataDetails, photoDetails, dataSync });
+        }
+        resolve([]);
+      });
+    });
+  }
+  urlgallery: any;
+  showImage(index: any, listphoto: IDetectAIPhotoDetail[]) {
+    const changeindex = index;
+    localStorage.setItem('listphoto', JSON.stringify(listphoto));
+    localStorage.setItem('changeindex', changeindex);
+    this.urlgallery = 'assets/ZoomImage/tool.html';
+    document.open(
+      <string>this.urlgallery,
+      'image_default',
+      'height=700,width=900,top=100,left= 539.647'
+    );
+  }
+  public visible = false;
+
+  toggleLiveDemo() {
+    this.visible = !this.visible;
+  }
+
+  handleLiveDemoChange(event: any) {
+    this.visible = event;
+  }
+  message: string = '';
+
+  async AwaitSave(listData: IDetectAIDataDetail[]) {
+    this.message = '';
+    return new Promise<any>((resolve, reject) => {
+      this.detectAIService
+        .ewo_detectai_detail_save(listData)
+        .subscribe((data: any) => {
+          if (data.result == EnumStatus.ok) {
+            this.message = 'Lưu thành công...!';
+            listData.forEach((data: any) => {
+              let dataItem: IDataSync = {
+                AuditId: data.audit_id,
+                ProductId: Number(data.sku_code),
+                Facing: data.sku_facing,
+              };
+              let index = this.dataSync.findIndex(
+                (element: IDataSync) =>
+                  element.AuditId == data.audit_id &&
+                  element.ProductId == Number(data.sku_code)
+              );
+              if (index >= 0) {
+                this.dataSync[index].Facing = dataItem.Facing;
+              } else {
+                this.dataSync.push(dataItem);
+              }
+            });
+            resolve({ data });
+          }
+          resolve([]);
+          reject(() => {
+            this.message = 'Đã xảy ra lỗi...!';
+          });
+        });
+    });
+  }
+  async AwaitQCSave(item: IDetectAIData) {
+    this.message = '';
+    return new Promise<any>((resolve, reject) => {
+      this.detectAIService
+        .ewo_detectai_qcsave(item.detect_id)
+        .subscribe((data: any) => {
+          if (data.result == EnumStatus.ok) {
+            this.message = 'Xác nhận thành công...!';
+            this.visible = !this.visible;
+            resolve({ data });
+          }
+          resolve([]);
+          reject(() => {
+            this.message = 'Đã xảy ra lỗi...!';
+            this.visible = !this.visible;
+          });
+        });
+    });
+  }
+  async AwaitDataSync(list: IDataSync[]) {
+    this.message = '';
+    return new Promise<any>((resolve, reject) => {
+      this.detectAIService.datasync_detail(list).subscribe((data: any) => {
+        if (data.result == EnumStatus.ok) {
+          resolve({ data });
+        }
+        resolve([]);
+        reject(() => { });
+      });
+    });
+  }
+  async SaveDetail(listData: IDetectAIDataDetail[]) {
+    listData.forEach((el) => {
+      if (!el.sku_facing) {
+        el.sku_facing = el.sku_facing_ai;
+      }
+    });
+    const data = await this.AwaitSave(listData);
+    this.visible = !this.visible;
+  }
+  async QCSave(item: any) {
+    if (
+      !this.details_visible[item.detect_id] ||
+      !this.details_visible[item.detect_id].dataDetails
+    ) {
+      this.message = 'Vui lòng kiểm tra kết quả chi tiết trước xác nhận...!';
+      this.visible = !this.visible;
+      return;
+    }
+    const dataItemDetails = this.details_visible[
+      item.detect_id
+    ].dataDetails.filter(
+      (data: any) => item.audit_id == data.audit_id && !data.sku_facing
+    );
+    if (dataItemDetails.length > 0) {
+      this.message = 'Vui lòng lưu hết kết quả chi tiết trước xác nhận...!';
+      this.visible = !this.visible;
+      return;
+    }
+    const data = await this.AwaitQCSave(item);
+    if (!this.item_visible[item.detect_id]) {
+      item.detect_verify = 1;
+      let dt = new Date();
+      item.qc_update_date = this.formatDate(dt);
+      this.item_visible[item.detect_id] = { ...item };
+    }
+    if (
+      item.detect_verify == 1 ||
+      this.item_visible[item.detect_id]?.detect_verify == 1
+    ) {
+      this.message = 'Đã xác nhận...!';
+      this.visible = !this.visible;
+    }
+    const dataSyncItem = this.dataSync.filter(
+      (data) => item.audit_id == data.AuditId && data.Facing
+    );
+    const dataSync = await this.AwaitDataSync(dataSyncItem);
+  }
+  totalPages = 2
+  Filter(pageNumber: number) {
+
+    this.isLoading = true;
+    this.filterData = [];
+    this.message = '';
+    if (!this.fromDate) {
+      this.message = 'Vui lòng chọn fromDate!';
+      this.visible = true;
+    }
+    if (!this.toDate) {
+      this.message = 'Vui lòng chọn toDate!';
+      this.visible = true;
+    }
+    this.currentPage = pageNumber
+    try {
+      this.detectAIService
+        .ewo_detectai_getall(
+          Pf.DateToInt(this.fromDate!),
+          Pf.DateToInt(this.toDate!),
+          30,
+          this.employee_code,
+          this.shop_code,
+          this.report_code,
+          pageNumber,
+          -1,
+          this.promotion_id
+        )
+        .subscribe(
+          (data: any) => {
+            if (data.result == EnumStatus.ok) {
+              if (data.data && data.data.length) {
+                this.filterData = data.data.map((item: any) => {
+                  this.totalPages = Math.ceil(data.data[0].TotalRows / 20);
+                  const {
+                    detect_id,
+                    audit_id,
+                    employee,
+                    shop_code,
+                    shop_name,
+                    shop_address,
+                    shop_type,
+                    show,
+                    detected_date,
+                    detect_verify,
+                    qc_update_date,
+                    dataDetails,
+                    photoDetails,
+                  } = {
+                    ...item,
+                    show: null,
+                    dataDetails: [],
+                    photoDetails: [],
+                  } as Partial<NonNullable<typeof item>>;
+                  return {
+                    detect_id,
+                    audit_id,
+                    employee,
+                    shop_code,
+                    shop_name,
+                    shop_address,
+                    shop_type,
+                    show,
+                    detected_date,
+                    detect_verify,
+                    qc_update_date,
+                    dataDetails,
+                    photoDetails,
+                  } as IDetectAIData;
+                });
+              } else {
+                this.message = 'Không có dữ liệu!';
+                this.visible = true;
+              }
+            }
+            this.isLoading = false;
+          },
+          (error) => {
+            this.isLoading = false;
+          }
+        );
+    } catch (error) {
+      this.isLoading = false;
+    }
+  }
+  formatDate(date: Date) {
+    let datePart = [date.getFullYear(), date.getMonth() + 1, date.getDate()]
+      .map((n, i) => n.toString().padStart(2, '0'))
+      .join('-');
+    let timePart = [date.getHours(), date.getMinutes(), date.getSeconds()]
+      .map((n, i) => n.toString().padStart(2, '0'))
+      .join(':');
+    return datePart + ' ' + timePart;
+  }
+  currentPage: number = 1
+  onPageChange(event: any) {
+    this.currentPage = event;
+    console.log('Page :', this.currentPage)
+    this.Filter(this.currentPage);
+  }
+
+
+  openImageInNewWindow(imageUrl1: any, type: number) {
+    const imageUrl = imageUrl1.changingThisBreaksApplicationSecurity;
+    const newWindow = window.open('', '_blank');
+    if (newWindow && type == 1) {
+      newWindow.document.write(`
+      <html>
+        <head>
+          <title>Image Viewer</title>
+          <style>
+            body {
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background: #1E1E1E;
+              cursor: grab;
+            }
+            body.dragging {
+              cursor: grabbing;
+            }
+            .viewer-container {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100vw;
+              height: 100vh;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            object {
+              max-width: none;
+              max-height: none;
+              object-fit: contain;
+              transform-origin: top left;
+              transition: transform 0.05s ease-out;
+              pointer-events: none;
+            }
+            .zoom-level {
+              background: rgba(0,0,0,0.5);
+              color: white;
+              padding: 5px 10px;
+              border-radius: 4px;
+              position: fixed;
+              top: 20px;
+              right: 20px;
+              font-family: sans-serif;
+              font-size: 14px;
+            }
+          </style>
+        </head>
+        <body>
+          <div class="viewer-container" id="container"></div>
+          <div class="zoom-level" id="zoomLevel">100%</div>
+          <script>
+            const imageUrl = "${imageUrl}";
+            const objectElement = document.createElement('object');
+            objectElement.data = imageUrl;
+            objectElement.id = 'image';
+            objectElement.type = 'image/svg+xml';
+            // objectElement.width = '100%';
+            // objectElement.height = '100%';
+            document.getElementById('container').appendChild(objectElement);
+
+            const container = document.getElementById('container');
+            const zoomLevel = document.getElementById('zoomLevel');
+            let image = null;
+            let scale = 1;
+            let translateX = 0;
+            let translateY = 0;
+            const MAX_SCALE = 12;
+
+            function updateTransform() {
+              if (image) {
+                image.style.transform = \`translate(\${translateX}px, \${translateY}px) scale(\${scale})\`;
+                zoomLevel.textContent = \`\${Math.round(scale * 100)}%\`;
+              }
+            }
+
+            // Mouse wheel zoom at cursor
+            container.addEventListener('wheel', (e) => {
+              e.preventDefault();
+              if (!image) return;
+
+              const rect = image.getBoundingClientRect();
+              const mouseX = e.clientX - rect.left;
+              const mouseY = e.clientY - rect.top;
+
+              const prevScale = scale;
+              const delta = e.deltaY > 0 ? -0.15 : 0.15;
+              scale = Math.min(Math.max(0.1, scale + delta), MAX_SCALE);
+              const scaleFactor = scale / prevScale;
+
+              translateX -= (mouseX - translateX) * (scaleFactor - 1);
+              translateY -= (mouseY - translateY) * (scaleFactor - 1);
+
+              updateTransform();
+            });
+
+            // Dragging
+            let isDragging = false;
+            let dragStartX = 0;
+            let dragStartY = 0;
+
+            container.addEventListener('mousedown', (e) => {
+              isDragging = true;
+              dragStartX = e.clientX - translateX;
+              dragStartY = e.clientY - translateY;
+              document.body.classList.add('dragging');
+            });
+
+            container.addEventListener('mousemove', (e) => {
+              if (!isDragging) return;
+              translateX = e.clientX - dragStartX;
+              translateY = e.clientY - dragStartY;
+              updateTransform();
+            });
+
+            container.addEventListener('mouseup', () => {
+              isDragging = false;
+              document.body.classList.remove('dragging');
+            });
+
+            container.addEventListener('mouseleave', () => {
+              isDragging = false;
+              document.body.classList.remove('dragging');
+            });
+
+            objectElement.addEventListener('load', () => {
+              image = objectElement;
+              updateTransform();
+            });
+          </script>
+        </body>
+      </html>
+    `);
+    }
+    if (newWindow && type == 2) {
+      newWindow.document.write(`
+    <html>
+      <head>
+        <title>Image Viewer</title>
+        <style>
+          body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #1E1E1E;
+            cursor: grab;
+          }
+          body.dragging {
+            cursor: grabbing;
+          }
+          .viewer-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+          }
+          #image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: top left;
+            transition: transform 0.05s ease-out;
+            will-change: transform;
+            pointer-events: none; /* ✅ FIX chuột dính ảnh */
+          }
+          .zoom-level {
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-family: sans-serif;
+            font-size: 14px;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="viewer-container" id="container">
+          <img src="${imageUrl1}" id="image">
+        </div>
+        <div class="zoom-level" id="zoomLevel">100%</div>
+        <script>
+          const container = document.getElementById('container');
+          const image = document.getElementById('image');
+          const zoomLevel = document.getElementById('zoomLevel');
+
+          let scale = 1;
+          let translateX = 0;
+          let translateY = 0;
+          const MAX_SCALE = 12;
+
+          function updateTransform() {
+            image.style.transform = \`translate(\${translateX}px, \${translateY}px) scale(\${scale})\`;
+            zoomLevel.textContent = \`\${Math.round(scale * 100)}%\`;
+          }
+
+          container.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            const rect = image.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+
+            const prevScale = scale;
+            const delta = e.deltaY > 0 ? -0.1 : 0.1;
+            scale = Math.min(Math.max(0.1, scale + delta), MAX_SCALE);
+            const scaleFactor = scale / prevScale;
+
+            translateX -= (mouseX - translateX) * (scaleFactor - 1);
+            translateY -= (mouseY - translateY) * (scaleFactor - 1);
+
+            updateTransform();
+          });
+
+          let isDragging = false;
+          let dragStartX = 0;
+          let dragStartY = 0;
+
+          container.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            dragStartX = e.clientX - translateX;
+            dragStartY = e.clientY - translateY;
+            document.body.classList.add('dragging');
+          });
+
+          container.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            translateX = e.clientX - dragStartX;
+            translateY = e.clientY - dragStartY;
+            updateTransform();
+          });
+
+          container.addEventListener('mouseup', () => {
+            isDragging = false;
+            document.body.classList.remove('dragging');
+          });
+
+          container.addEventListener('mouseleave', () => {
+            isDragging = false;
+            document.body.classList.remove('dragging');
+          });
+
+          updateTransform();
+        </script>
+      </body>
+    </html>
+  `);
+    }
+
+
+
+  }
+}
